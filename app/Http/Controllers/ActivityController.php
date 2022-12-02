@@ -37,13 +37,20 @@ class ActivityController extends Controller
             $activity_client = $this->getActivityClient($activity->id, $client->id);
 
             if ($activity_client->exists) {
-                $this->sendMail($client, $activity, $activity_client);
+                $this->sendMail($client, $activity);
+
+                if (!$activity_client->is_emailed) {
+                    // after email success
+                    $activity_client->is_emailed = 1;
+                    $activity_client->save();
+                }
 
                 return back()->with('info', 'you already registered to this Activity before and we send the email again.');
             }
 
-            $this->sendMail($client, $activity, $activity_client);
+            $this->sendMail($client, $activity);
 
+            $activity_client->is_emailed = 1;
             $activity_client->save();
 
         } catch (\Exception $e) {
@@ -55,19 +62,13 @@ class ActivityController extends Controller
         return back()->with('success', 'you have registered to Activity Successfully');
     }
 
-    private function sendMail(Client $client, Activity $activity, ActivityClient $activity_client)
+    private function sendMail(Client $client, Activity $activity)
     {
         Mail::to($client->email)
             ->send(new ClientRegisteredToActivity(
                 client: $client,
                 activityName: $activity->name
             ));
-
-        if (!$activity_client->is_emailed) {
-            // after email success
-            $activity_client->is_emailed = 1;
-            $activity_client->save();
-        }
     }
 
     private function getClient(array $data): Client
@@ -85,9 +86,18 @@ class ActivityController extends Controller
 
     private function getActivityClient(int $activity_id, int $client_id): ActivityClient|null
     {
-        return ActivityClient::firstOrNew([
+        $activity = ActivityClient::where([
             ['activity_id', '=', $activity_id],
             ['client_id', '=', $client_id],
         ])->first();
+
+        if (!$activity) {
+            return new ActivityClient([
+                'activity_id' => $activity_id,
+                'client_id' => $client_id
+            ]);
+        }
+
+        return $activity;
     }
 }
