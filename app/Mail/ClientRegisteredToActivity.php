@@ -57,9 +57,9 @@ class ClientRegisteredToActivity extends Mailable
         $fileName = $this->activityName . '.pdf';
 
         return [
-//            Attachment::fromPath(storage_path('activities/' . $fileName))
-//                ->as($fileName)
-//                ->withMime('application/pdf'),
+            Attachment::fromPath(storage_path('activities/' . $fileName))
+                ->as($fileName)
+                ->withMime('application/pdf'),
         ];
     }
 }
