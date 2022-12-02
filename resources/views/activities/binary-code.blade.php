@@ -117,10 +117,8 @@
                         <h1 class="text-white mb-4 animated slideInDown">Binary Code Activity</h1>
                         <p class="text-white pb-3 animated slideInDown"><span class="h2 text-white">لكي تحصل علي النشاط قم بتسجيل إسمك والبريد الإلكتروني وسوف نرسل النشاط علي بريدك الإلكتروني</span>
                         </p>
-                        <p><span class="h3 text-warning"> إستمتعوا بالنشاط وشاركونا في التعليقات بنشاطكم</span></p>
-                        <!--                                <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 58px;">-->
-                        <!--                                <button type="button" class="btn btn-primary rounded-pill py-2 px-3 shadow-none position-absolute top-0 end-0 m-2">Submit</button>-->
-                        <!--                            </div>-->
+                        <p><span class="h3 text-light"> إستمتعوا بالنشاط وشاركونا في التعليقات بنشاطكم</span></p>
+                        <a href="#contact-form" class="btn btn-lg btn-warning">اشترك الان</a>
                     </div>
                     <div class="col-lg-6 text-center text-lg-start">
                         <img class="img-fluid rounded animated zoomIn" src="{{ asset('activities/img/binary-code-main.jpeg') }}"
@@ -225,7 +223,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <p>Binary Code Activity</p>
-                    <form method="POST" action="{{ route('contact') }}">
+                    <form method="POST" action="{{ route('contact') }}" id="contact-form">
                         @csrf
                         <input type="hidden" name="activity" value="{{ $name }}">
                         <div class="row g-3">
