@@ -24,9 +24,14 @@ class ActivityController extends Controller
 
     public function activity(string $name): Factory|View|Application
     {
-        return view('activities.' . $name, [
-            'name' => $name
-        ]);
+        $viewName = 'activities.' . $name;
+        if (view()->exists($viewName)) {
+            return view($viewName, [
+                'name' => $name
+            ]);
+        }
+
+        return abort(404);
     }
 
     public function contact(Request $request): RedirectResponse

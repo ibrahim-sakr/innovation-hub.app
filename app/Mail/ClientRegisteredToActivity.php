@@ -31,7 +31,7 @@ class ClientRegisteredToActivity extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'اكتب اسم بلغة الكمبيوتر'
+            subject: 'اكتب اسمك بلغة الكمبيوتر'
         );
     }
 

@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\HomeController;
-use App\Mail\ClientRegisteredToActivity;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+//Route::get('/fuck', function() {
+//
+//    return (new ClientRegisteredToActivity(new Client(), 'binary-code'))->render();
+//});
