@@ -13,21 +13,24 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
 
 class ActivityController extends Controller
 {
     public function index(): RedirectResponse
     {
 //        return view('activities');
-        return redirect()->route('activities', ['name' => 'binary-code']);
+        return redirect()->route('activities', ['name' => 'binary-code']); // multiplication-table
     }
 
     public function activity(string $name): Factory|View|Application
     {
         $viewName = 'activities.' . $name;
         if (view()->exists($viewName)) {
+
             return view($viewName, [
-                'name' => $name
+                'name' => $name,
+                'title' => Str::title(str_replace('-', ' ', $name))
             ]);
         }
 
