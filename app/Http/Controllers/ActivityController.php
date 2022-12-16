@@ -17,14 +17,15 @@ use Illuminate\Support\Str;
 
 class ActivityController extends Controller
 {
-    public function index(): RedirectResponse
+    public function index(): Factory|View|Application
     {
-//        return view('activities');
-        return redirect()->route('activities', ['name' => 'binary-code']); // multiplication-table
+        return view('activities.home');
+//        return redirect()->route('activities', ['name' => 'binary-code']);
     }
 
     public function activity(string $name): Factory|View|Application
     {
+        // binary-code, multiplication-table
         $viewName = 'activities.' . $name;
         if (view()->exists($viewName)) {
 

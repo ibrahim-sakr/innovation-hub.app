@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Innovation-hub - Activity Landing Page </title>
+    <title>{{ isset($title) ? $title . ' Activity - Innovation-hub' : 'Innovation-hub Activities' }}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -43,11 +43,10 @@
     </div>
     <!-- Spinner End -->
 
-
     <!-- Navbar & Hero Start -->
     <div class="container-xxl position-relative p-0" id="home">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-            <a href="" class="navbar-brand p-0">
+            <a href="/" class="navbar-brand p-0">
                 <!--                    <h1 class="m-0">soFFer</h1>-->
                 <img src="{{ asset('activities/img/main-logo.png') }}" alt="Logo">
             </a>
@@ -112,7 +111,52 @@
                 <p class="mb-5"></p>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                @yield('testimonial')
+                @hasSection('testimonial')
+                    @yield('testimonial')
+                @else
+                    <div class="testimonial-item bg-light rounded my-4">
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>حقيقي مهندسة هدير ربنا
+                            يبارك لحضرتك صبورة على الولاد وبتحتوي قدراتهم وبتبسطي المعلومات جدًا لحد ما يستوعبوا ويفهموا
+                            وفعلًا طريقة شرحك رائعة وبسيطة وكلها طولة بال اللهم بارك 💕</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle"
+                                 src="{{ asset('activities/img/main-logo.png') }}"
+                                 style="width: 65px; height: 65px;">
+                            <div class="ps-4">
+                                <h5 class="mb-1">يامن</h5>
+                                <span>Mental Math Course</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded my-4">
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>جزاك الله خيرا ميس
+                            هدير على تعبك وصبرك مع الاولاد وكمان على المادة العلمية حتى اللهم بارك وقت البريك بيكون ألعاب
+                            مفيدة و محمد بيكون مبسوط معاكى .. بالتوفيق دائما يارب ونتقابل فى المسابقة باذن الله 💪</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle"
+                                 src="{{ asset('activities/img/main-logo.png') }}"
+                                 style="width: 65px; height: 65px;">
+                            <div class="ps-4">
+                                <h5 class="mb-1">محمد</h5>
+                                <span>FLL Competition Course</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded my-4">
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>شكرا جداااااا
+                            باشمهندسة هدير على تعبك مع الولاد في الكورس محمد راجع مبسوط ومتحمس انه اتعلم حاجات ميعرفهاش يا
+                            رب بالنفع والفائدة ان شاء الله ........</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle"
+                                 src="{{ asset('activities/img/main-logo.png') }}"
+                                 style="width: 65px; height: 65px;">
+                            <div class="ps-4">
+                                <h5 class="mb-1"> محمد</h5>
+                                <span>CodyBot Robot Course</span>
+                            </div>
+                        </div>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
@@ -153,33 +197,41 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <p>{{ $title }} Activity</p>
-                    <form method="POST" action="{{ route('contact') }}" id="contact-form">
-                        @csrf
-                        <input type="hidden" name="activity" value="{{ $name }}">
-                        <div class="row g-3">
-                            <div class="col-md-12">
-                                <div class="form-floating">
-                                    <input name="name" type="text" class="form-control" id="name"
-                                           placeholder="Your Name">
-                                    <label for="name">Your Name</label>
+                    @if(isset($title))
+                        <p>{{ $title }} Activity</p>
+                        <form method="POST" action="{{ route('contact') }}" id="contact-form">
+                            @csrf
+                            <input type="hidden" name="activity" value="{{ $name }}">
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <input name="name" type="text" class="form-control" id="name"
+                                               placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-floating">
-                                    <input name="email" type="email" class="form-control" id="email"
-                                           placeholder="Your Email">
-                                    <label for="email">Your Email</label>
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <input name="email" type="email" class="form-control" id="email"
+                                               placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="col-12">
-                                <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">قم بالتسجيل للحصول
-                                    علي النشاط
-                                </button>
+                                <div class="col-12">
+                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">قم بالتسجيل للحصول
+                                        علي النشاط
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    @else
+                        <img
+                            style="height: 280px; float: right;"
+                            class="img-fluid rounded animated zoomIn"
+                            src="{{ asset('activities/img/contact-us.jpg') }}"
+                            alt="">
+                    @endif
                 </div>
             </div>
         </div>
