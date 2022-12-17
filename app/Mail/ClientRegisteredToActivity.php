@@ -30,8 +30,14 @@ class ClientRegisteredToActivity extends Mailable
      */
     public function envelope(): Envelope
     {
+        $subject = match ($this->activityName) {
+            'binary-code' => 'اكتب اسمك بلغة الكمبيوتر',
+            'multiplication-table' => 'أسهل نشاط لجدول الضرب',
+            default => '',
+        };
+
         return new Envelope(
-            subject: 'اكتب اسمك بلغة الكمبيوتر'
+            subject: $subject
         );
     }
 
@@ -43,7 +49,7 @@ class ClientRegisteredToActivity extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.registered-to-activity'
+            view: 'emails.registered-to-' . $this->activityName
         );
     }
 
