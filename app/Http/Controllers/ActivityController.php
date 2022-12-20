@@ -25,7 +25,7 @@ class ActivityController extends Controller
 
     public function activity(string $name): Factory|View|Application
     {
-        // binary-code, multiplication-table
+        // binary-code, multiplication-table, sequencing-and-debugging
         $viewName = 'activities.' . $name;
         if (view()->exists($viewName)) {
 

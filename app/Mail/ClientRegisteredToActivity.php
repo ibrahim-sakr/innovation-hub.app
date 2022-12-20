@@ -33,6 +33,7 @@ class ClientRegisteredToActivity extends Mailable
         $subject = match ($this->activityName) {
             'binary-code' => 'اكتب اسمك بلغة الكمبيوتر',
             'multiplication-table' => 'أسهل نشاط لجدول الضرب',
+            'sequencing-and-debugging' => 'نشاط البرمجة',
             default => '',
         };
 
