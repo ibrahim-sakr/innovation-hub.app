@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\MtiController;
+use App\Http\Controllers\FeedbackController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [MtiController::class, 'index'])->name('feedback.index');
-Route::post('/', [MtiController::class, 'feedback'])->name('feedback.feedback');
+Route::get('/', [FeedbackController::class, 'index'])->name('feedback.index');
+Route::post('/', [FeedbackController::class, 'feedback'])->name('feedback.feedback');

@@ -26,12 +26,12 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->configureRateLimiting();
+//        $this->configureRateLimiting();
 
         $this->routes(function () {
-            Route::domain('feedback.' . config('app.url'))
-                ->middleware('web')
-                ->group(base_path('routes/feedback.php'));
+//            Route::domain('feedback.' . config('app.url'))
+//                ->middleware('web')
+//                ->group(base_path('routes/feedback.php'));
 
             Route::domain('activities.' . config('app.url'))
                 ->middleware('web')
@@ -40,12 +40,6 @@ class RouteServiceProvider extends ServiceProvider
             Route::domain(config('app.url'))->
                 middleware('web')
                 ->group(base_path('routes/web.php'));
-
-            Route::domain(config('app.url'))
-                ->middleware('api')
-                ->prefix('api')
-                ->group(base_path('routes/api.php'));
-
         });
     }
 
