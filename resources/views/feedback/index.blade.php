@@ -5600,7 +5600,7 @@
                         {{ Session::get('success') }}
                     </div>
                 @endif
-                <form class="xd" method="POST" action="{{ route('mti.feedback') }}">
+                <form class="xd" method="POST" action="{{ route('feedback.feedback') }}">
                     @csrf
                     <div>
                         <label for="name" class="yd vo io eo">Name *</label>

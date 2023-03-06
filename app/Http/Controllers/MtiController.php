@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\ClientRegisteredToActivity;
-use App\Mail\ClientRegisteredToMti;
-use App\Models\Activity;
+use App\Mail\ClientRegisteredToFeedback;
 use App\Models\Client;
 use App\Models\Feedback;
 use Illuminate\Contracts\Foundation\Application;
@@ -18,7 +16,7 @@ class MtiController extends Controller
 {
     public function index(): Factory|View|Application
     {
-        return view('mti.index');
+        return view('feedback.index');
     }
 
     public function feedback(Request $request)
@@ -36,7 +34,7 @@ class MtiController extends Controller
 
         if ($validation->fails()) {
             return redirect()
-                ->route('mti.index')
+                ->route('feedback.index')
                 ->withFragment('feedback')
                 ->withErrors($validation)
                 ->withInput();
@@ -49,10 +47,10 @@ class MtiController extends Controller
             'client_id' => $client->id,
         ]);
 
-        Mail::to($client->email)->send(new ClientRegisteredToMti());
+        Mail::to($client->email)->send(new ClientRegisteredToFeedback());
 
         return redirect()
-            ->route('mti.index')
+            ->route('feedback.index')
             ->withFragment('feedback')
             ->with('success', 'you are awesome, and your feedback indeed make us better');
     }

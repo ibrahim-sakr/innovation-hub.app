@@ -9,7 +9,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class ClientRegisteredToMti extends Mailable
+class ClientRegisteredToFeedback extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -22,14 +22,14 @@ class ClientRegisteredToMti extends Mailable
     public function content(): Content
     {
 
-        return new Content(view: 'emails.registered-to-mti');
+        return new Content(view: 'emails.registered-to-feedback');
     }
 
     public function attachments(): array
     {
 
         return [
-            Attachment::fromPath(storage_path('mti/coupon-code.pdf'))
+            Attachment::fromPath(storage_path('feedback/coupon-code.pdf'))
                 ->as('promocode')
                 ->withMime('application/pdf'),
             Attachment::fromPath(storage_path('activities/binary-code.pdf'))
