@@ -29,12 +29,15 @@ class RouteServiceProvider extends ServiceProvider
         $this->configureRateLimiting();
 
         $this->routes(function () {
+            Route::domain('mti.' . config('app.url'))
+                ->middleware('web')
+                ->group(base_path('routes/mti.php'));
+
             Route::domain('activities.' . config('app.url'))
                 ->middleware('web')
                 ->group(base_path('routes/activities.php'));
 
             Route::domain(config('app.url'))->
-//            Route::
                 middleware('web')
                 ->group(base_path('routes/web.php'));
 
