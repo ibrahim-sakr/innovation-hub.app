@@ -33,10 +33,10 @@ class ClientRegisteredToFeedback extends Mailable
                 ->as('promocode')
                 ->withMime('application/pdf'),
             Attachment::fromPath(storage_path('activities/binary-code.pdf'))
-                ->as('promocode')
+                ->as('binary-code')
                 ->withMime('application/pdf'),
             Attachment::fromPath(storage_path('activities/sequencing-and-debugging.pdf'))
-                ->as('promocode')
+                ->as('sequencing-and-debugging')
                 ->withMime('application/pdf'),
         ];
     }

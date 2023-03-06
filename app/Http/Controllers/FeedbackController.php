@@ -21,11 +21,6 @@ class FeedbackController extends Controller
 
     public function feedback(Request $request)
     {
-//    - validate form => dpne
-//    - save client => done
-//    - save feedback => done
-//    - send pdf as attached => done
-//    - return success message => done
         $validation = Validator::make($request->all(), [
             'name' => ['required', 'min:3'],
             'email' => ['required', 'email'],
