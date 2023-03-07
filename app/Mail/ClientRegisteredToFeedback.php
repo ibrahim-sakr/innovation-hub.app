@@ -38,6 +38,9 @@ class ClientRegisteredToFeedback extends Mailable
             Attachment::fromPath(storage_path('activities/sequencing-and-debugging.pdf'))
                 ->as('sequencing-and-debugging')
                 ->withMime('application/pdf'),
+            Attachment::fromPath(storage_path('presentations/code_your_future.pdf'))
+                ->as('code-your-future')
+                ->withMime('application/pdf'),
         ];
     }
 }
