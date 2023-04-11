@@ -117,13 +117,6 @@
                                         </p>
                                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">
                                             ، ونحن نقدر لك إعلامنا بذلك. لإظهار تقديرنا ، قمنا بتضمين رمز القسيمة في المرفقات يرجي استخدامه للاستمتاع بالمزيد من خدماتنا .
-                                            وايضا قمنا بارسال مرفقات انشطة كي تبدأ بها مع اطفالك
-                                        </p>
-                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">
-                                            طريقة شرح الانشطة
-
-                                            https://fb.watch/hKZx-kSind/?mibextid=qC1gEa
-                                            https://www.facebook.com/InnovationHub.tech/videos/623242852821444
                                         </p>
                                     </td>
                                 </tr>

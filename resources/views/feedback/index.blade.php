@@ -43,6 +43,16 @@
             color: inherit
         }
 
+        .featured-image {
+            border-radius: 15px;
+            border: 5px solid rgb(170 148 244);
+            transform: rotate(-3deg);
+            transition: transform 0.5s;
+        }
+        .featured-image:hover {
+            transform: scale(1.1) rotate(0);
+        }
+
         abbr[title] {
             -webkit-text-decoration: underline dotted;
             text-decoration: underline dotted
@@ -5332,7 +5342,7 @@
             </div>
             <div class="re hi mi tg bd od sz l1 cz">
                 <div class="db">
-                    <img class="uf ef" src="/website/img/main-section-2.jpg">
+                    <img class="uf ef featured-image" src="/website/img/feature-image.jpg">
                 </div>
             </div>
         </div>

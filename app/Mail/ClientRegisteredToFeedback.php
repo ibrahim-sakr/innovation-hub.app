@@ -32,15 +32,15 @@ class ClientRegisteredToFeedback extends Mailable
             Attachment::fromPath(storage_path('feedback/coupon-code.pdf'))
                 ->as('promocode')
                 ->withMime('application/pdf'),
-            Attachment::fromPath(storage_path('activities/binary-code.pdf'))
-                ->as('binary-code')
-                ->withMime('application/pdf'),
-            Attachment::fromPath(storage_path('activities/sequencing-and-debugging.pdf'))
-                ->as('sequencing-and-debugging')
-                ->withMime('application/pdf'),
-            Attachment::fromPath(storage_path('presentations/code_your_future.pdf'))
-                ->as('code-your-future')
-                ->withMime('application/pdf'),
+//            Attachment::fromPath(storage_path('activities/binary-code.pdf'))
+//                ->as('binary-code')
+//                ->withMime('application/pdf'),
+//            Attachment::fromPath(storage_path('activities/sequencing-and-debugging.pdf'))
+//                ->as('sequencing-and-debugging')
+//                ->withMime('application/pdf'),
+//            Attachment::fromPath(storage_path('presentations/code_your_future.pdf'))
+//                ->as('code-your-future')
+//                ->withMime('application/pdf'),
         ];
     }
 }
