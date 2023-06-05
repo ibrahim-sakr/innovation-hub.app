@@ -19,6 +19,11 @@ class FeedbackController extends Controller
         return view('feedback.index');
     }
 
+    function index2(): Factory|View|Application
+    {
+        return view('feedback');
+    }
+
     public function feedback(Request $request)
     {
         $validation = Validator::make($request->all(), [
