@@ -1,4 +1,4 @@
-<x-layouts.main>
+<x-layout type="main">
 
     <!-- Start Sldier Area  -->
     <div class="slider-area eduvibe-landing-banner bg-image" id="intro">
@@ -668,4 +668,4 @@
     </div>
     <!-- End Accordion Area  -->
 
-</x-layouts.main>
+</x-layout>

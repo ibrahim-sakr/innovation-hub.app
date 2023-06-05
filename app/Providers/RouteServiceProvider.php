@@ -33,9 +33,9 @@ class RouteServiceProvider extends ServiceProvider
 //                ->middleware('web')
 //                ->group(base_path('routes/feedback.php'));
 
-            Route::domain('activities.' . config('app.url'))
-                ->middleware('web')
-                ->group(base_path('routes/activities.php'));
+//            Route::domain('activities.' . config('app.url'))
+//                ->middleware('web')
+//                ->group(base_path('routes/activities.php'));
 
             Route::domain(config('app.url'))->
                 middleware('web')
