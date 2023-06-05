@@ -1,251 +1,671 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>IHUB</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+<x-layouts.main>
 
-    <!-- Favicons -->
-    <link href="{{ asset('website/img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('website/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <!-- Start Sldier Area  -->
+    <div class="slider-area eduvibe-landing-banner bg-image" id="intro">
+        <div class="d-flex align-items-center height-800">
+            <div class="container eduvibe-animated-shape">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="inner">
+                            <div class="content text-start">
+                                <h1 class="title" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                                    EduVibe Online Education HTML & Bootstrap Template</h1>
+                                <p data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">Ultimate Feature
+                                    Rich Education HTML5 Template for Online <br /> Schooling & Distance Learning.</p>
+                                <div class="btn-group-vertical" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+                                    <a class="edu-btn left-button" href="https://1.envato.market/VyeWkO" target="_blank">Get EduVibe
+                                        <i class="icon-arrow-right-line-right"></i>
+                                    </a>
+                                    <a class="edu-btn bg-white right-button" href="#demo">Explore Demo
+                                        <i class="icon-arrow-right-line-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="banner-image">
+                            <div class="banner-main-image">
+                                <img class="landing-banner-hero-img" src="{{ asset('assets/images/banner/landing-demo/tablet-mobile-view.png') }}" alt="Tablet & Mobile View" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Bootstrap CSS File -->
-    <link href="{{ asset('website/lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-
-    <!-- Libraries CSS Files -->
-    <link href="{{ asset('website/lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
-
-    <!-- Main Stylesheet File -->
-    <link href="{{ asset('website/css/style.css') }}" rel="stylesheet">
-</head>
-
-<body>
-
-<div id="h">
-    <div class="row">
-        <div class="col-md-12 navbar">
-            <div class="container">
-                <img src="{{ asset('website/img/main-logo.png') }}" alt="main-logo">
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/InnovationHub.tech" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                 class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="whatsapp://send?phone=201124338883&text=I'm Interested" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                 class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:info@innovation-hub.app?subject=IHUB">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                 class="bi bi-envelope" viewBox="0 0 16 16">
-                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 soon">
-                <h1>SOON</h1>
-                <h3>WE ARE CRAFTING THE LAST DETAILS TO LAUNCH OUR SITE</h3>
-                <div class="countdown-header">
-                    <div class="countdown" data-date="2022/7/7"></div>
+                <div class="shape-wrapper">
+                    <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+                        <div class="shape-image shape-image-1">
+                            <img src="{{ asset('assets/images/shapes/shape-11-08.png') }}" alt="Shape Thumb" />
+                        </div>
+                        <div class="shape-image shape-image-2">
+                            <img src="{{ asset('assets/images/shapes/shape-03.png') }}" alt="Shape Thumb" />
+                        </div>
+                        <div class="shape-image shape-image-3">
+                            <img src="{{ asset('assets/images/shapes/shape-23-02.png') }}" alt="Shape Thumb" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!--/row-->
     </div>
-    <!--/container-->
-</div>
+    <!-- End Sldier Area  -->
 
-<div class="container ptb">
-    <div class="row">
-        <div class="col-md-12">
-            <h2>
-                We are working hard to launch our awesome program
-                <br>
-                <br>
-                < CodeyBot:Coder >
-            </h2>
-            <div class="youtube">
-                <iframe width="1200" height="800" src="https://www.youtube.com/embed/zbd1H0f7tpg"
-                        title="CodyBot Video"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                </iframe>
+    <div class="landing-home-demo-area edu-section-gap bg-color-white" id="demo">
+        <div class="container eduvibe-animated-shape">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pre-section-title text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <span class="color-primary pretitle">Homepages</span>
+                        <h3 class="title"><span class="color-primary">05</span> Creative & Trendy Homepages</h3>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
 
-<div id="learning">
-    <div class="container ptb">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-                    Why learn to code?
-                </h2>
-                <h3>In the near future, the use of programming, such as reading and writing today, is an integral part of future jobs</h3>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-                    Coding Boosts
-                </h2>
-                <ul>
-                    <li>
-                        <img src="{{ asset('website/img/problem%20solving.jpeg') }}" alt="">
-                        <p>Problem-Solving Skills</p>
-                    </li>
-                    <li>
-                        <img src="{{ asset('website/img/creativity.png') }}" alt="">
-                        <p>Creativity</p>
-                    </li>
-                    <li>
-                        <img src="{{ asset('website/img/Develop%20Resilience.png') }}" alt="">
-                        <p>Develop Resilience</p>
-                    </li>
-                    <li>
-                        <img src="{{ asset('website/img/math-skills.jpg') }}" alt="">
-                        <p>Math skills</p>
-                    </li>
-                    <li>
-                        <img src="{{ asset('website/img/computational-thinking.jpeg') }}" alt="">
-                        <p>Computational Thinking</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            <div class="row g-5 mt--10">
 
-    </div>
-
-</div>
-
-<div id="training">
-    <div class="container ptb">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-                    We train children in the technology of the future
-                </h2>
-                <ul>
-                    <li>
-                        <img src="{{ asset('website/img/m-bot-logo.png') }}" alt="">
-                    </li>
-                    <li>
-                        <img src="{{ asset('website/img/python-logo.png') }}" alt="">
-                    </li>
-                    <li>
-                        <img src="{{ asset('website/img/scrach-logo.png') }}" alt="">
-                    </li>
-                    <li>
-                        <img src="{{ asset('website/img/abacus.png') }}" alt="">
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="courses">
-    <div class="container ptb">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-                    Courses
-                </h2>
-                <ul>
-                    <li>
-                        <div class="course">
-                            <img src="{{ asset('website/img/course-scratch.jpg') }}" alt="course-scratch">
-                            <p> Students will learn the concepts of programming through practical projects using CodyBot robot and by the end of the course students will have mastered basic programming and robotics skills   </p>
+                <!-- Start Single Demo  -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="single-demo">
+                        <div class="inner">
+                            <div class="thumbnail">
+                                <a class="thumbnail-link" target="_blank" href="index-one.html">
+                                    <img src="{{ asset('assets/images/landing-demo/home-01.jpg') }}" alt="Preview Images">
+                                </a>
+                                <div class="hover-action">
+                                    <a class="edu-btn" target="_blank" href="index-one.html">Explore <i
+                                            class="icon-arrow-right-line-right"></i></a>
+                                </div>
+                            </div>
+                            <h5 class="title"><a href="index-one.html" target="_blank">EduVibe Home 01</a></h5>
                         </div>
-                    </li>
-                    <li>
-                        <div class="course">
-                            <img src="{{ asset('website/img/course-python.jpg') }}" alt="course-scratch">
-                            <p>
-                                Students will learn the most important international programming languages Python through practical projects using CodyBot robot  and by the end of the course students will have mastered basic programming and robotics skills </p>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="single-demo">
+                        <div class="inner">
+                            <div class="thumbnail">
+                                <a class="thumbnail-link" target="_blank" href="index-two.html">
+                                    <img src="{{ asset('assets/images/landing-demo/home-02.jpg') }}" alt="Preview Images">
+                                </a>
+                                <div class="hover-action">
+                                    <a class="edu-btn" target="_blank" href="index-two.html">Explore <i
+                                            class="icon-arrow-right-line-right"></i></a>
+                                </div>
+                            </div>
+                            <h5 class="title"><a href="index-two.html" target="_blank">EduVibe Home 02</a></h5>
                         </div>
-                    </li>
-                    <li>
-                        <div class="course">
-                            <img src="{{ asset('website/img/course-mental-math.png') }}" alt="course-scratch">
-                            <p>Mental math can help kids understand math concepts better and get to the answer faster.
-                                Improve the Skills of Students of All Ages</p>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="single-demo">
+                        <div class="inner">
+                            <div class="thumbnail">
+                                <a class="thumbnail-link" target="_blank" href="index-three.html">
+                                    <img src="{{ asset('assets/images/landing-demo/home-03.jpg') }}" alt="Preview Images">
+                                </a>
+                                <div class="hover-action">
+                                    <a class="edu-btn" target="_blank" href="index-three.html">Explore <i
+                                            class="icon-arrow-right-line-right"></i></a>
+                                </div>
+                            </div>
+                            <h5 class="title"><a href="index-three.html" target="_blank">EduVibe Home 03</a></h5>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="single-demo">
+                        <div class="inner">
+                            <div class="thumbnail">
+                                <a class="thumbnail-link" target="_blank" href="index-four.html">
+                                    <img src="{{ asset('assets/images/landing-demo/home-04.jpg') }}" alt="Preview Images">
+                                </a>
+                                <div class="hover-action">
+                                    <a class="edu-btn" target="_blank" href="index-four.html">Explore <i
+                                            class="icon-arrow-right-line-right"></i></a>
+                                </div>
+                            </div>
+                            <h5 class="title"><a href="index-four.html" target="_blank">EduVibe Home 04</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="single-demo">
+                        <div class="inner">
+                            <div class="thumbnail">
+                                <a class="thumbnail-link" target="_blank" href="index-five.html">
+                                    <img src="{{ asset('assets/images/landing-demo/home-05.jpg') }}" alt="Preview Images">
+                                </a>
+                                <div class="hover-action">
+                                    <a class="edu-btn" target="_blank" href="index-five.html">Explore <i
+                                            class="icon-arrow-right-line-right"></i></a>
+                                </div>
+                            </div>
+                            <h5 class="title"><a href="index-five.html" target="_blank">EduVibe Home 05</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="single-demo coming-soon">
+                        <div class="inner">
+                            <div class="thumbnail">
+                                <a class="thumbnail-link" target="_blank" href="#">
+                                    <img src="{{ asset('assets/images/landing-demo/coming-soon.jpg') }}" alt="Preview Images">
+                                </a>
+                            </div>
+                            <h5 class="title">Coming Soon</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+            </div>
+
+            <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+                <div class="shape-image shape-image-1">
+                    <img src="{{ asset('assets/images/shapes/shape-03-10.png') }}" alt="Shape Thumb" />
+                </div>
+                <div class="shape-image shape-image-2">
+                    <img src="{{ asset('assets/images/shapes/shape-29-01.png') }}" alt="Shape Thumb" />
+                </div>
+                <div class="shape-image shape-image-3">
+                    <img src="{{ asset('assets/images/shapes/shape-04-03.png') }}" alt="Shape Thumb" />
+                </div>
+                <div class="shape-image shape-image-4">
+                    <img src="{{ asset('assets/images/shapes/shape-16-02.png') }}" alt="Shape Thumb" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="edu-demo-course-layout edu-section-gap bg-image">
+        <div class="container eduvibe-animated-shape">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pre-section-title text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <span class="color-primary pretitle">Course Layout</span>
+                        <h3 class="title"><span class="color-primary">05</span> Responsive Course Layouts</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 mt--10">
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="single-demo inner-demo">
+                        <div class="inner">
+                            <div class="thumbnail">
+                                <a class="thumbnail-link" href="course-style-1.html" target="_blank">
+                                    <img src="{{ asset('assets/images/landing-demo/course-1.jpg') }}" alt="Course 1">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="single-demo inner-demo">
+                        <div class="inner">
+                            <div class="thumbnail">
+                                <a class="thumbnail-link" href="course-style-2.html" target="_blank">
+                                    <img src="{{ asset('assets/images/landing-demo/course-2.jpg') }}" alt="Course 2">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="single-demo inner-demo">
+                        <div class="inner">
+                            <div class="thumbnail">
+                                <a class="thumbnail-link" href="course-style-3.html" target="_blank">
+                                    <img src="{{ asset('assets/images/landing-demo/course-3.jpg') }}" alt="Course 3">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+            </div>
+
+            <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+                <div class="shape-image shape-image-1">
+                    <img src="{{ asset('assets/images/shapes/shape-05-06.png') }}" alt="Shape Thumb" />
+                </div>
+                <div class="shape-image scene shape-image-2">
+                    <img src="{{ asset('assets/images/shapes/shape-13-05.png') }}" alt="Shape Thumb" />
+                </div>
+                <div class="shape-image scene shape-image-3">
+                    <img src="{{ asset('assets/images/shapes/shape-07-03.png') }}" alt="Shape Thumb" />
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div id="g">
-    <div class="container">
-        <div class="row centered">
-            <h1>Contact Us</h1>
-            <div class="col-md-12">
-                <h4>SOCIAL MEDIA</h4>
-                <p class="social-buttons">
-                    <a href="https://www.facebook.com/InnovationHub.tech" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                             class="bi bi-facebook" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                        </svg>
-                    </a>
-                    <a href="whatsapp://send?phone=201124338883&text=I'm Interested" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                             class="bi bi-whatsapp" viewBox="0 0 16 16">
-                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                        </svg>
-                    </a>
-                    <a href="mailto:info@innovation-hub.app?subject=IHUB">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                             class="bi bi-envelope" viewBox="0 0 16 16">
-                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                        </svg>
-                    </a>
-                </p>
+    <div class="landing-demo-features edu-section-gap bg-color-white" id="features">
+        <div class="container eduvibe-animated-shape">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pre-section-title text-center mb--20">
+                        <span class="color-primary pretitle">Awesome Features</span>
+                        <h3 class="title">EduVibe Best Features</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 mt--10">
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-01.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">Animation</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-02.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">Speed Performance</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-03.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">Built on Bootstrap(5.x)</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-04.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">Slick Slider</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-05.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">Google Fonts</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-06.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">Mouse-move Parallax Effect</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-07.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">Parallax Effect</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-08.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">BoxIcons</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-09.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">Fast 5 Star Support</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-10.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">Smooth Transition Effects</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-12.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">Browser Compatibility</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-13.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">Developer Friendly</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-14.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">Quick Support</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-15.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">Well Documented</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+
+                <!-- Start Single Demo  -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="demo-feature mt--20">
+                        <div class="inner">
+                            <div class="icon">
+                                <img src="{{ asset('assets/images/landing-demo/feature-16.png') }}" alt="Preview Images">
+                            </div>
+                            <h6 class="title">Free Lifetime Updates</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Demo  -->
+            </div>
+
+            <div class="shape-wrapper">
+                <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+                    <div class="shape-image shape-image-1">
+                        <img src="{{ asset('assets/images/shapes/shape-04-08.png') }}" alt="Shape Thumb" />
+                    </div>
+                    <div class="shape-image shape-image-2">
+                        <img src="{{ asset('assets/images/shapes/shape-03-02.png') }}" alt="Shape Thumb" />
+                    </div>
+                    <div class="shape-image shape-image-3">
+                        <img src="{{ asset('assets/images/shapes/shape-11-10.png') }}" alt="Shape Thumb" />
+                    </div>
+                </div>
             </div>
         </div>
-        <!--/row-->
-
     </div>
-    <!--/container-->
-</div>
 
-<div id="copyrights">
-    <div class="container">
-        <div class="credits">
-            &copy; Copyrights <strong>innovation-hub</strong>. All Rights Reserved
+    <div class="edu-demo-course-layout edu-section-gap bg-image">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pre-section-title text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <span class="color-primary pretitle">Inner Pages</span>
+                        <h3 class="title"><span class="color-primary">45+</span> Beautiful Pre-built Inner Pages</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pv-gallery-wrapper mt--20">
+            <div class="gallery-loop background-marque"></div>
         </div>
     </div>
-</div>
 
-<script src="{{ asset('website/lib/jquery/jquery.min.js') }}"></script>
-<script src="{{ asset('website/lib/countdown/jquery.plugin.min.js') }}"></script>
-<script src="{{ asset('website/lib/countdown/jquery.countdown.min.js') }}"></script>
-<script src="{{ asset('website/js/main.js') }}"></script>
-</body>
-</html>
+    <!-- Start Accordion Area  -->
+    <div class="landing-demo-faq-wrapper edu-accordion-area accordion-shape-1 edu-section-gap bg-color-white" id="faq">
+        <div class="container eduvibe-animated-shape">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pre-section-title text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <span class="color-primary pretitle">Faq question</span>
+                        <h3 class="title">Have Any Questions?</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 mt--10">
+                <div class="col-xl-8 offset-xl-2">
+                    <div class="landing-demo-faq edu-accordion-02 variation-2 landing-page-accordion" id="accordionExample1">
+
+                        <div class="edu-accordion-item" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                            <div class="edu-accordion-header" id="headingOne">
+                                <button class="edu-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is EduVibe and How it works?
+                                </button>
+                            </div>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
+                                <div class="edu-accordion-body">
+                                    <p>Looking for an elegant template to build your education website that won’t burden your budget? <strong>"EduVibe - Education HTML Template Using Bootstrap 5"</strong> is the best way to get started with wonderful animations, creative design patterns, and code that is perfectly responsive. This Bootstrap 5 template includes 05 different homepage demos that are easy to customize. Currently we're working on 3 other homepages. There are more than 45+ inner pages designed blocks ready to use in every conceivable educational institution—perfect for distance learning or remote training purposes!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edu-accordion-item">
+                            <div class="edu-accordion-header" id="headingTwo">
+                                <button class="edu-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How to open a ticket and get customer support?
+                                </button>
+                            </div>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample1">
+                                <div class="edu-accordion-body">
+                                    <p>If you already bought <strong>"EduVibe"</strong> then you can open a support ticket at <strong><a href="https://devsvibe.freshdesk.com/" target="_blank">devsvibe.freshdesk.com</a></strong> or you can simply send us an email at <strong><a href="mailto:contact@devsvibe.com" target="_blank">contact@devsvibe.com</a></strong> along with the purchase code. To find the purchase code please follow this <strong><a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-" target="_blank">link</a></strong>. Our support engineers will reply to you within 15 minutes to 8 hours(max).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edu-accordion-item">
+                            <div class="edu-accordion-header" id="headingThree">
+                                <button class="edu-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    I've some presale questions?
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample1">
+                                <div class="edu-accordion-body">
+                                    <p>Sure, you can simply send us an email at <strong><a href="mailto:contact@devsvibe.com" target="_blank">contact@devsvibe.com</a></strong> or you can send us a message at <strong><a href="https://m.me/devsvibe" target="_blank">Facebook Messenger</a></strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edu-accordion-item">
+                            <div class="edu-accordion-header" id="headingFour">
+                                <button class="edu-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    How long I'll get update if I purchase your item?
+                                </button>
+                            </div>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample1">
+                                <div class="edu-accordion-body">
+                                    <p>If you buy once, then you'll get lifetime updates and you don't need to spend a penny for any further updates. Whenever we add a feature in <strong>EduVibe</strong>, you'll receive all the future updates for free...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edu-accordion-item">
+                            <div class="edu-accordion-header" id="headingFive">
+                                <button class="edu-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Can I customize EduVibe template as I want?
+                                </button>
+                            </div>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample1">
+                                <div class="edu-accordion-body">
+                                    <p>We've designed and coded <strong>EduVibe</strong> considering the maximum customization ability. We believe you can customize it as you want like any other HTML template. You can also read the in details <strong><a href="https://docs.devsvibe.com/eduvibe-html/index.html" target="_blank">documentation</a></strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edu-accordion-item">
+                            <div class="edu-accordion-header" id="headingSix">
+                                <button class="edu-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Can I build a complete education website with this template?
+                                </button>
+                            </div>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample1">
+                                <div class="edu-accordion-body">
+                                    <p><strong>EduVibe</strong> is an education template specially designed for building a complete website for online course, motivation, photography, school/kindergarten, university or any kind of educational institution.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edu-accordion-item">
+                            <div class="edu-accordion-header" id="headingSeven">
+                                <button class="edu-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    I already bought this template and searching for a developer?
+                                </button>
+                            </div>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample1">
+                                <div class="edu-accordion-body">
+                                    <p>We provide custom solutions as a service. If you're searching for a developer to customize your template according to your requirements or any other custom work then please feel free to contact with us at <strong><a href="mailto:contact@devsvibe.com" target="_blank">contact@devsvibe.com</a></strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+                <div class="animate-image shape-image-1">
+                    <img src="{{ asset('assets/images/shapes/shape-11-11.png') }}" alt="Shape Thumb">
+                </div>
+                <div class="animate-image shape-image-2">
+                    <img src="{{ asset('assets/images/shapes/shape-14-01.png') }}" alt="Shape Thumb">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Accordion Area  -->
+
+    <!-- Start Accordion Area  -->
+    <div class="pv-shop-area bg-image bg-image--36 edu-demo-ecommerce-layout">
+        <div class="container eduvibe-animated-shape">
+            <div class="row row--50 align-items-center">
+                <div class="col-lg-6 col-lg-offset-1">
+                    <div class="pre-section-title text-start">
+                        <span class="color-primary pretitle">eCommerce included</span>
+                        <h3 class="title">e-Commerce Included</h3>
+                        <p class="description mt--40">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc null liobortis nibh porttitor. Facilisi arcu, nibh vel risus, morbi pharetra. Facilisi sit miam mauris non iaculis elit fusce amet nunc in odio molestie.</p>
+                        <ul class="pv-list-style">
+                            <li>Multiple courses showcasing tab</li>
+                            <li>Online course selling options</li>
+                            <li>Add course from cart options</li>
+                            <li>Rating showcasing widget</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="thumbnail">
+                        <img src="{{ asset('assets/images/landing-demo/ecommerce-support.png') }}" alt="Shop Images">
+                    </div>
+                </div>
+            </div>
+            <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+                <div class="shape-image shape-image-1">
+                    <img src="{{ asset('assets/images/shapes/shape-03-05.png') }}" alt="Shape Thumb">
+                </div>
+                <div class="shape-image shape-image-2">
+                    <img src="{{ asset('assets/images/shapes/shape-05-03.png') }}" alt="Shape Thumb">
+                </div>
+                <div class="shape-image shape-image-3">
+                    <img src="{{ asset('assets/images/shapes/shape-25.png') }}" alt="Shape Thumb">
+                </div>
+                <div class="shape-image shape-image-4">
+                    <img src="{{ asset('assets/images/shapes/shape-04-06.png') }}" alt="Shape Thumb">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Accordion Area  -->
+
+</x-layouts.main>
