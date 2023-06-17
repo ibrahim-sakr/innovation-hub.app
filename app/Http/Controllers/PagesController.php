@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Contracts\View\View;
 //use Illuminate\Http\Request;
 
-class PageController extends Controller
+class PagesController extends Controller
 {
     public function home(): View
     {
@@ -30,6 +30,11 @@ class PageController extends Controller
     public function competition(): View
     {
         return view('pages.competition');
+    }
+
+    public function category(): View
+    {
+        return view('pages.category');
     }
 
     public function courses(): View

@@ -1,16 +1,17 @@
 <?php
 
-use App\Http\Controllers\PageController;
+use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [PageController::class, 'home'])->name('home');
-Route::get('/activities', [PageController::class, 'activities'])->name('activities');
-Route::get('/activity/{activity}', [PageController::class, 'activity'])->name('activity');
-Route::get('/competitions', [PageController::class, 'competitions'])->name('competitions');
-Route::get('/competition/{competition}', [PageController::class, 'competition'])->name('competition');
-Route::get('/courses', [PageController::class, 'courses'])->name('courses');
-Route::get('/course/{course}', [PageController::class, 'course'])->name('course');
-Route::get('/feedback', [PageController::class, 'feedback'])->name('feedback');
-Route::get('/we-are-hiring', [PageController::class, 'weAreHiring'])->name('we-are-hiring');
-Route::get('/join-us', [PageController::class, 'joinUs'])->name('join-us');
-Route::get('/mental-math', [PageController::class, 'mentalMath'])->name('mental-math');
+Route::get('/', [PagesController::class, 'home'])->name('home');
+Route::get('/activities', [PagesController::class, 'activities'])->name('activities');
+Route::get('/activity/{activity}', [PagesController::class, 'activity'])->name('activity');
+Route::get('/competitions', [PagesController::class, 'competitions'])->name('competitions');
+Route::get('/competition/{competition}', [PagesController::class, 'competition'])->name('competition');
+Route::get('/category/{category}', [PagesController::class, 'category'])->name('category');
+Route::get('/courses', [PagesController::class, 'courses'])->name('courses');
+Route::get('/course/{course}', [PagesController::class, 'course'])->name('course');
+Route::get('/feedback', [PagesController::class, 'feedback'])->name('feedback');
+Route::get('/we-are-hiring', [PagesController::class, 'weAreHiring'])->name('we-are-hiring');
+Route::get('/join-us', [PagesController::class, 'joinUs'])->name('join-us');
+Route::get('/mental-math', [PagesController::class, 'mentalMath'])->name('mental-math');
