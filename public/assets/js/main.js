@@ -47,7 +47,7 @@
                 }, 10);
             });
         },
-        
+
         salActive: function () {
             sal({
                 threshold: 0.01,
@@ -63,7 +63,7 @@
             });
         },
 
-        
+
         slickSlider: function () {
             $('.testimonial-item-1').slick({
                 dots: true,
@@ -113,19 +113,19 @@
                         settings: {
                             slidesToShow: 5,
                         }
-                    }, 
+                    },
                     {
                         breakpoint: 992,
                         settings: {
                             slidesToShow: 4,
                         }
-                    }, 
+                    },
                     {
                         breakpoint: 480,
                         settings: {
                             slidesToShow: 2,
                         }
-                    }, 
+                    },
                 ]
             });
 
@@ -143,14 +143,14 @@
                             slidesToShow: 3,
                             slidesToScroll: 3
                         }
-                    }, 
+                    },
                     {
                         breakpoint: 992,
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 2
                         }
-                    }, 
+                    },
                     {
                         breakpoint: 768,
                         settings: {
@@ -178,14 +178,14 @@
                             slidesToShow: 3,
                             slidesToScroll: 3
                         }
-                    }, 
+                    },
                     {
                         breakpoint: 992,
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 2
                         }
-                    }, 
+                    },
                     {
                         breakpoint: 768,
                         settings: {
@@ -194,7 +194,7 @@
                         }
                     }
                 ]
-                
+
             });
 
             $('.testimonial-nav-activation').slick({
@@ -221,8 +221,6 @@
                 slidesToScroll: 1,
                 dots: true,
                 nav: false,
-                autoplay: false,
-                autoplaySpeed: 4000,
                 autoplay: true,
                 autoplaySpeed: 4000
             });
@@ -244,26 +242,25 @@
                             slidesToShow: 3,
                             slidesToScroll: 3,
                         }
-                    }, 
+                    },
                     {
                         breakpoint: 768,
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 2,
                         }
-                    }, 
+                    },
                     {
                         breakpoint: 577,
                         settings: {
                             slidesToShow: 1,
                             slidesToScroll: 1,
                         }
-                    }, 
+                    },
                 ]
             });
 
             $('.team-activation-01').slick({
-                dots: false,
                 infinite: true,
                 arrows: true,
                 dots: true,
@@ -280,7 +277,7 @@
                             slidesToShow: 3,
                             slidesToScroll: 3,
                         }
-                    }, 
+                    },
                     {
                         breakpoint: 768,
                         settings: {
@@ -288,7 +285,7 @@
                             slidesToScroll: 2,
                             arrows: false,
                         }
-                    }, 
+                    },
                     {
                         breakpoint: 577,
                         settings: {
@@ -296,12 +293,11 @@
                             slidesToScroll: 1,
                             arrows: false,
                         }
-                    }, 
+                    },
                 ]
             });
 
             $('.team-activation-02').slick({
-                dots: false,
                 infinite: true,
                 arrows: true,
                 dots: true,
@@ -319,7 +315,7 @@
                             slidesToScroll: 2,
                             arrows: false,
                         }
-                    }, 
+                    },
                     {
                         breakpoint: 577,
                         settings: {
@@ -327,12 +323,11 @@
                             slidesToScroll: 1,
                             arrows: false,
                         }
-                    }, 
+                    },
                 ]
             });
 
             $('.team-activation-03').slick({
-                dots: false,
                 infinite: true,
                 arrows: true,
                 dots: true,
@@ -349,7 +344,7 @@
                             slidesToShow: 3,
                             slidesToScroll: 3,
                         }
-                    }, 
+                    },
                     {
                         breakpoint: 768,
                         settings: {
@@ -357,7 +352,7 @@
                             slidesToScroll: 2,
                             arrows: false,
                         }
-                    }, 
+                    },
                     {
                         breakpoint: 577,
                         settings: {
@@ -365,7 +360,7 @@
                             slidesToScroll: 1,
                             arrows: false,
                         }
-                    }, 
+                    },
                 ]
             });
 
@@ -538,7 +533,7 @@
                 monthlyPrice = $('.monthly-pricing'),
                 yearlyPrice = $('.yearly-pricing'),
                 buttonSlide = $('#pricing-checkbox');
-            
+
             $(monthlySelectBtn).on('click', function() {
                 buttonSlide.prop('checked', true);
                 $(this).addClass('active').parent('.nav-item').siblings().children().removeClass('active');
@@ -546,7 +541,7 @@
                 yearlyPrice.css('display', 'none');
 
             });
-            
+
             $(yearlySelectBtn).on('click', function() {
                 buttonSlide.prop('checked', false);
                 $(this).addClass('active').parent('.nav-item').siblings().children().removeClass('active');
@@ -566,7 +561,7 @@
                     monthlySelectBtn.removeClass('active');
                     monthlyPrice.css('display', 'none');
                     yearlyPrice.css('display', 'block');
-                    
+
                 }
             });
         },
@@ -627,7 +622,7 @@
             });
 
 
-            
+
             $('.edu-accordion-02').on('click', 'button[aria-expanded="true"]', function() {
                 $(this).parent().parent().addClass('bg-active');
                 $('.edu-accordion-02 button[aria-expanded="false"]').parent().parent().removeClass('bg-active');
@@ -672,9 +667,9 @@
             $('.close-trigger').on('click', function () {
                 $('.edu-search-popup').removeClass('open')
             })
-            $( '.edu-search-popup' ).on( 'click', function () {
-                $('.edu-search-popup').removeClass( 'open' );
-            } )
+            // $( '.edu-search-popup' ).on( 'click', function () {
+            //     $('.edu-search-popup').removeClass( 'open' );
+            // } )
             $('.edu-search-popup .eduvibe-search-popup-field').on('click', function (e) {
                 e.stopPropagation();
             })

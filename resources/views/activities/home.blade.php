@@ -12,6 +12,10 @@
             <p><span class="text-light"> إستمتعوا بالنشاط وشاركونا في التعليقات بنشاطكم</span></p>
             <a href="/multiplication-table" class="btn btn-lg btn-warning">اذهب الى النشاط</a>
         </div>
+
+
+
+
         <div class="col-lg-4 text-center">
             <h3 class="text-white mb-4 animated slideInDown">Sequencing And Debugging</h3>
             <p><span class="text-light"> إستمتعوا بالنشاط وشاركونا في التعليقات بنشاطكم</span></p>
