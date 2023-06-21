@@ -10,4 +10,9 @@ class Competition extends Model
     use HasFactory;
 
     protected $table = 'competitions';
+
+    public function categories()
+    {
+        return $this->hasMany(Category::class, 'competition_id', 'id');
+    }
 }

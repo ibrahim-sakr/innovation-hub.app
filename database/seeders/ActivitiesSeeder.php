@@ -16,7 +16,7 @@ class ActivitiesSeeder extends Seeder
         $activities = [
             [
                 'id' => 1,
-                'name' => 'Sequencing and debugging',
+                'name' => 'Sequencing & debugging',
                 'description' => 'Description',
                 'icon' => 'Destination',
                 'created_at' => $now,

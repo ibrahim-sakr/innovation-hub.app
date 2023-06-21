@@ -6,11 +6,15 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="inner">
                         <div class="content">
-                            <span class="pre-title" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Better Learning Future With Us</span>
+                            <span class="pre-title" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                {{ $competition->slug }}
+                            </span>
                             <h1 class="title" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
-                                Committed To Learn Excellence In Education</h1>
+                                {{ $competition->name }}
+                            </h1>
                             <p class="description" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
-                                It is long established that a reader will be distracted by the <br /> readable popular and best content.</p>
+                                {{ $competition->description }}
+                            </p>
                             <div class="read-more-btn" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
                                 <a class="edu-btn" href="#">Get Started Today <i class="icon-arrow-right-line-right"></i></a>
                             </div>
@@ -203,285 +207,115 @@
     <div class="edu-course-area edu-section-gap bg-color-white">
         <div class="container">
             <div class="row g-5 mt--10">
-                <!-- Start Single Card  -->
-                <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                    <div class="edu-card card-type-3 radius-small">
-                        <div class="inner">
-                            <div class="thumbnail">
-                                <a href="course-details.html">
-                                    <img class="w-100" src="{{ asset('assets/images/course/course-01/course-01.jpg') }}" alt="Course Thumb">
-                                </a>
-                                <div class="wishlist-top-right">
-                                    <button class="wishlist-btn"><i class="icon-Heart"></i></button>
+                @foreach($competition->categories as $category)
+                    <!-- Start Single Card  -->
+                    <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="edu-card card-type-3 radius-small">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="course-details.html">
+                                        <img class="w-100" src="{{ asset('assets/images/course/course-01/course-01.jpg') }}" alt="Course Thumb">
+                                    </a>
+{{--                                    <div class="wishlist-top-right">--}}
+{{--                                        <button class="wishlist-btn"><i class="icon-Heart"></i></button>--}}
+{{--                                    </div>--}}
+                                    <div class="top-position status-group left-bottom">
+                                        <span class="eduvibe-status status-03">
+                                            age ({{ $category->age_to ? $category->age_from . ' - ' . $category->age_to : $category->age_from . '+'}})
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="top-position status-group left-bottom">
-                                    <span class="eduvibe-status status-03">Language Learning</span>
+                                <div class="content">
+{{--                                    <div class="card-top">--}}
+{{--                                        <div class="author-meta">--}}
+{{--                                            <div class="author-thumb">--}}
+{{--                                                <a href="instructor-profile.html">--}}
+{{--                                                    <img src="{{ asset('assets/images/instructor/instructor-small/instructor-2.jpg') }}" alt="Author Images">--}}
+{{--                                                    <span class="author-title">Nancy Phipps</span>--}}
+{{--                                                </a>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <ul class="edu-meta meta-02">--}}
+{{--                                            <li><i class="icon-file-list-3-line"></i>29 Lessons</li>--}}
+{{--                                        </ul>--}}
+{{--                                    </div>--}}
+                                    <h6 class="title">
+                                        <a href="#">
+                                            {{ $category->name }}
+                                        </a>
+                                    </h6>
+{{--                                    <div class="card-bottom">--}}
+{{--                                        <div class="price-list price-style-02">--}}
+{{--                                            <div class="price current-price">$29.99</div>--}}
+{{--                                            <div class="price old-price">$39.99</div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="edu-rating rating-default">--}}
+{{--                                            <div class="rating">--}}
+{{--                                                <i class="icon-Star"></i>--}}
+{{--                                                <i class="icon-Star"></i>--}}
+{{--                                                <i class="icon-Star"></i>--}}
+{{--                                                <i class="icon-Star"></i>--}}
+{{--                                                <i class="icon-Star"></i>--}}
+{{--                                            </div>--}}
+{{--                                            <span class="rating-count">(18)</span>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
                                 </div>
                             </div>
-                            <div class="content">
-                                <div class="card-top">
-                                    <div class="author-meta">
-                                        <div class="author-thumb">
-                                            <a href="instructor-profile.html">
-                                                <img src="{{ asset('assets/images/instructor/instructor-small/instructor-2.jpg') }}" alt="Author Images">
-                                                <span class="author-title">Nancy Phipps</span>
-                                            </a>
+
+                            <div class="card-hover-action">
+                                <div class="hover-content">
+                                    <div class="content-top">
+                                        <div class="top-status-bar">
+                                            <span class="eduvibe-status status-03">
+                                                age ({{ $category->age_to ? $category->age_from . ' - ' . $category->age_to : $category->age_from . '+'}})
+                                            </span>
                                         </div>
+{{--                                        <div class="top-wishlist-bar">--}}
+{{--                                            <button class="wishlist-btn"><i class="icon-Heart"></i></button>--}}
+{{--                                        </div>--}}
                                     </div>
-                                    <ul class="edu-meta meta-02">
-                                        <li><i class="icon-file-list-3-line"></i>29 Lessons</li>
-                                    </ul>
-                                </div>
-                                <h6 class="title"><a href="#">Master Native English Class This Speaking Skills</a>
-                                </h6>
-                                <div class="card-bottom">
-                                    <div class="price-list price-style-02">
-                                        <div class="price current-price">$29.99</div>
-                                        <div class="price old-price">$39.99</div>
+
+                                    <h6 class="title">
+                                        <a href="{{ route('category', ['category' => $category->id]) }}">
+                                            {{ $category->name }}
+                                        </a>
+                                    </h6>
+
+                                    <p class="description">
+                                        {!! $category->description !!}
+                                    </p>
+
+{{--                                    <div class="price-list price-style-02">--}}
+{{--                                        <div class="price current-price">$29.99</div>--}}
+{{--                                        <div class="price old-price">$39.99</div>--}}
+{{--                                    </div>--}}
+
+{{--                                    <div class="hover-bottom-content">--}}
+{{--                                        <div class="author-meta">--}}
+{{--                                            <div class="author-thumb">--}}
+{{--                                                <a href="instructor-profile.html">--}}
+{{--                                                    <img src="{{ asset('assets/images/instructor/instructor-small/instructor-2.jpg') }}" alt="Author Images">--}}
+{{--                                                    <span class="author-title">Nancy Phipps</span>--}}
+{{--                                                </a>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <ul class="edu-meta meta-02">--}}
+{{--                                            <li><i class="icon-file-list-3-line"></i>29 Lessons</li>--}}
+{{--                                        </ul>--}}
+{{--                                    </div>--}}
+                                    <div class="read-more-btn">
+                                        <a class="edu-btn btn-medium btn-white" href="{{ route('category', ['category' => $category->id]) }}">
+                                            Details<i class="icon-arrow-right-line-right"></i>
+                                        </a>
                                     </div>
-                                    <div class="edu-rating rating-default">
-                                        <div class="rating">
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                        </div>
-                                        <span class="rating-count">(18)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="card-hover-action">
-                            <div class="hover-content">
-                                <div class="content-top">
-                                    <div class="top-status-bar">
-                                        <span class="eduvibe-status status-03">Language Learning</span>
-                                    </div>
-                                    <div class="top-wishlist-bar">
-                                        <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                    </div>
                                 </div>
-
-                                <h6 class="title"><a href="course-details.html">Master Native English Class This Speaking Skills</a></h6>
-
-                                <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat.</p>
-
-                                <div class="price-list price-style-02">
-                                    <div class="price current-price">$29.99</div>
-                                    <div class="price old-price">$39.99</div>
-                                </div>
-
-                                <div class="hover-bottom-content">
-                                    <div class="author-meta">
-                                        <div class="author-thumb">
-                                            <a href="instructor-profile.html">
-                                                <img src="{{ asset('assets/images/instructor/instructor-small/instructor-2.jpg') }}" alt="Author Images">
-                                                <span class="author-title">Nancy Phipps</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <ul class="edu-meta meta-02">
-                                        <li><i class="icon-file-list-3-line"></i>29 Lessons</li>
-                                    </ul>
-                                </div>
-                                <div class="read-more-btn">
-                                    <a class="edu-btn btn-medium btn-white" href="{{ route('category', ['category' => 1]) }}">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Card  -->
-
-                <!-- Start Single Card  -->
-                <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                    <div class="edu-card card-type-3 radius-small">
-                        <div class="inner">
-                            <div class="thumbnail">
-                                <a href="course-details.html">
-                                    <img class="w-100" src="{{ asset('assets/images/course/course-01/course-01.jpg') }}" alt="Course Thumb">
-                                </a>
-                                <div class="wishlist-top-right">
-                                    <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                </div>
-                                <div class="top-position status-group left-bottom">
-                                    <span class="eduvibe-status status-03">Language Learning</span>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class="card-top">
-                                    <div class="author-meta">
-                                        <div class="author-thumb">
-                                            <a href="instructor-profile.html">
-                                                <img src="{{ asset('assets/images/instructor/instructor-small/instructor-2.jpg') }}" alt="Author Images">
-                                                <span class="author-title">Nancy Phipps</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <ul class="edu-meta meta-02">
-                                        <li><i class="icon-file-list-3-line"></i>29 Lessons</li>
-                                    </ul>
-                                </div>
-                                <h6 class="title"><a href="#">Master Native English Class This Speaking Skills</a>
-                                </h6>
-                                <div class="card-bottom">
-                                    <div class="price-list price-style-02">
-                                        <div class="price current-price">$29.99</div>
-                                        <div class="price old-price">$39.99</div>
-                                    </div>
-                                    <div class="edu-rating rating-default">
-                                        <div class="rating">
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                        </div>
-                                        <span class="rating-count">(18)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-hover-action">
-                            <div class="hover-content">
-                                <div class="content-top">
-                                    <div class="top-status-bar">
-                                        <span class="eduvibe-status status-03">Language Learning</span>
-                                    </div>
-                                    <div class="top-wishlist-bar">
-                                        <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                    </div>
-                                </div>
-
-                                <h6 class="title"><a href="course-details.html">Master Native English Class This Speaking Skills</a></h6>
-
-                                <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat.</p>
-
-                                <div class="price-list price-style-02">
-                                    <div class="price current-price">$29.99</div>
-                                    <div class="price old-price">$39.99</div>
-                                </div>
-
-                                <div class="hover-bottom-content">
-                                    <div class="author-meta">
-                                        <div class="author-thumb">
-                                            <a href="instructor-profile.html">
-                                                <img src="{{ asset('assets/images/instructor/instructor-small/instructor-2.jpg') }}" alt="Author Images">
-                                                <span class="author-title">Nancy Phipps</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <ul class="edu-meta meta-02">
-                                        <li><i class="icon-file-list-3-line"></i>29 Lessons</li>
-                                    </ul>
-                                </div>
-                                <div class="read-more-btn">
-                                    <a class="edu-btn btn-medium btn-white" href="{{ route('category', ['category' => 2]) }}">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
-                                </div>
-
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- End Single Card  -->
-
-                <!-- Start Single Card  -->
-                <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                    <div class="edu-card card-type-3 radius-small">
-                        <div class="inner">
-                            <div class="thumbnail">
-                                <a href="course-details.html">
-                                    <img class="w-100" src="{{ asset('assets/images/course/course-01/course-01.jpg') }}" alt="Course Thumb">
-                                </a>
-                                <div class="wishlist-top-right">
-                                    <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                </div>
-                                <div class="top-position status-group left-bottom">
-                                    <span class="eduvibe-status status-03">Language Learning</span>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class="card-top">
-                                    <div class="author-meta">
-                                        <div class="author-thumb">
-                                            <a href="instructor-profile.html">
-                                                <img src="{{ asset('assets/images/instructor/instructor-small/instructor-2.jpg') }}" alt="Author Images">
-                                                <span class="author-title">Nancy Phipps</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <ul class="edu-meta meta-02">
-                                        <li><i class="icon-file-list-3-line"></i>29 Lessons</li>
-                                    </ul>
-                                </div>
-                                <h6 class="title"><a href="#">Master Native English Class This Speaking Skills</a>
-                                </h6>
-                                <div class="card-bottom">
-                                    <div class="price-list price-style-02">
-                                        <div class="price current-price">$29.99</div>
-                                        <div class="price old-price">$39.99</div>
-                                    </div>
-                                    <div class="edu-rating rating-default">
-                                        <div class="rating">
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                        </div>
-                                        <span class="rating-count">(18)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-hover-action">
-                            <div class="hover-content">
-                                <div class="content-top">
-                                    <div class="top-status-bar">
-                                        <span class="eduvibe-status status-03">Language Learning</span>
-                                    </div>
-                                    <div class="top-wishlist-bar">
-                                        <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                    </div>
-                                </div>
-
-                                <h6 class="title"><a href="course-details.html">Master Native English Class This Speaking Skills</a></h6>
-
-                                <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat.</p>
-
-                                <div class="price-list price-style-02">
-                                    <div class="price current-price">$29.99</div>
-                                    <div class="price old-price">$39.99</div>
-                                </div>
-
-                                <div class="hover-bottom-content">
-                                    <div class="author-meta">
-                                        <div class="author-thumb">
-                                            <a href="instructor-profile.html">
-                                                <img src="{{ asset('assets/images/instructor/instructor-small/instructor-2.jpg') }}" alt="Author Images">
-                                                <span class="author-title">Nancy Phipps</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <ul class="edu-meta meta-02">
-                                        <li><i class="icon-file-list-3-line"></i>29 Lessons</li>
-                                    </ul>
-                                </div>
-                                <div class="read-more-btn">
-                                    <a class="edu-btn btn-medium btn-white" href="{{ route('category', ['category' => 3]) }}">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Card  -->
-
+                    <!-- End Single Card  -->
+                @endforeach
             </div>
         </div>
     </div>

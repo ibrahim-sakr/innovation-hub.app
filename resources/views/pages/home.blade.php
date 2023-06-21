@@ -10,9 +10,10 @@
                                 <span class="pre-title" data-sal-delay="150" data-sal="slide-up"
                                       data-sal-duration="800">Start Better Learning Future From Here</span>
                                 <h1 class="title" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
-                                    Education Is A Path To Success In Life</h1>
-                                <p class="description" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
                                     Building Tomorrow’s Innovators,Today
+                                </h1>
+                                <p class="description" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+                                    Empower your child's future with cutting-edge programming and robotics education
                                 </p>
                                 {{--                                <div class="read-more-btn" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">--}}
                                 {{--                                    <a class="edu-btn" href="#">Get Started Today <i class="icon-arrow-right-line-right"></i></a>--}}
@@ -35,12 +36,12 @@
                         </div>
                     </div>
                 </div>
-                <ul class="social-text-share">
-                    <li><a href="#">be</a></li>
-                    <li><a href="#">tw</a></li>
-                    <li><a href="#">li</a></li>
-                    <li><a href="#">fb</a></li>
-                </ul>
+{{--                <ul class="social-text-share">--}}
+{{--                    <li><a href="#">be</a></li>--}}
+{{--                    <li><a href="#">tw</a></li>--}}
+{{--                    <li><a href="#">li</a></li>--}}
+{{--                    <li><a href="#">fb</a></li>--}}
+{{--                </ul>--}}
                 <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
                     <div class="shape-image shape-image-1"><img
                             src="{{ asset('assets/images/shapes/shape-05-03.png') }}" alt="Shape Thumb"/></div>
@@ -77,8 +78,7 @@
         </div>
     </div>
 
-    <div id="courses"
-         class="edu-course-area eduvibe-home-three-course counterup-overlay-top bg-image edu-section-gapTop edu-section-gapBottom">
+    <div id="courses" class="edu-course-area eduvibe-home-three-course counterup-overlay-top bg-image edu-section-gapTop edu-section-gapBottom">
         <div class="container eduvibe-animated-shape">
             <div class="row">
                 <div class="col-lg-12">
@@ -121,6 +121,9 @@
                                         <a href="{{ route('course', [ 'course' => $course->id ]) }}">{{ $course->name }}</a>
                                     </h6>
                                     <div class="edu-rating rating-default">
+                                        <p>
+                                            {{ substr($course->description, 0, 150) }}...
+                                        </p>
                                         {{--                                        <div class="rating">--}}
                                         {{--                                            <i class="icon-Star"></i>--}}
                                         {{--                                            <i class="icon-Star"></i>--}}
@@ -130,8 +133,10 @@
                                         {{--                                        </div>--}}
                                         <span class="rating-count">age ({{ $course->age_to ? $course->age_from . ' - ' . $course->age_to : $course->age_from . '+'}})</span>
                                     </div>
-                                    <div class="card-bottom">
-                                        <div class="badge-transparent">{{ $course->price }} EGP</div>
+                                    <div class="card-bottom filters-button-group">
+                                        <a class="btn-transparent" href="{{ route('course', [ 'course' => $course->id] ) }}">
+                                            Read More<i class="icon-arrow-right-line-right"></i>
+                                        </a>
                                         <ul class="edu-meta meta-01">
                                             <li><i class="icon-account-circle-line"></i>{{ $course->students_count }}
                                                 Students
@@ -195,23 +200,24 @@
                             <div class="inner">
                                 <div class="content">
                                     <div class="status-group">
-                                        <a href="#"
+                                        <a href="{{ route('competition', ['competition' => $competition->id]) }}"
                                            class="eduvibe-status status-05 color-primary w-800">{{ strtoupper($competition->slug) }}</a>
                                     </div>
                                     <h4 class="title">
-                                        <a href="{{ route('competition', ['competition' => 1]) }}">
+                                        <a href="{{ route('competition', ['competition' => $competition->id]) }}">
                                             {{ $competition->name }}
                                         </a>
                                     </h4>
-{{--                                    <div class="blog-card-bottom">--}}
-{{--                                        <ul class="blog-meta">--}}
-{{--                                            <li><i class="icon-calendar-2-line"></i>06 Nov, 2022</li>--}}
-{{--                                            <li><i class="icon-user-line"></i>Posted By <a href="#">Admin</a></li>--}}
-{{--                                        </ul>--}}
-{{--                                    </div>--}}
+                                    <div class="blog-card-bottom">
+                                        <ul class="blog-meta">
+                                            <li>
+                                                {{ substr($competition->description, 0, 100) }}...
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="thumbnail">
-                                    <a href="{{ route('competition', ['competition' => 1]) }}">
+                                    <a href="{{ route('competition', ['competition' => $competition->id]) }}">
                                         <img src="assets/images/blog/post-02/post-01.jpg" alt="Blog Images">
                                     </a>
                                 </div>
@@ -252,7 +258,7 @@
             <div class="row eduvibe-about-one-service g-5 mt--20">
                 @foreach($activities as $activity)
                     <!-- Start Service Grid  -->
-                    <div class="col-lg-3 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="col-lg-4 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                         <div class="service-card service-card-3 text-left shape-bg-{{ $activity->id }} bg-grey">
                             <div class="inner">
                                 <div class="icon">
@@ -296,8 +302,7 @@
         </div>
     </div>
 
-    <div id="testimonials"
-         class="eduvibe-home-three-testimonial edu-testimonial-area testimonial-four-wrapper edu-section-gap bg-image ">
+    <div id="testimonials" class="eduvibe-home-three-testimonial edu-testimonial-area testimonial-four-wrapper edu-section-gap bg-image ">
         <!-- Start Testimonial Area  -->
         <div class="container eduvibe-animated-shape">
             <div class="row g-5 align-items-center">
@@ -380,7 +385,6 @@
                         </div>
                         <!-- End Tastimonial Card  -->
 
-
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -389,9 +393,9 @@
                             <span class="pre-title">Testimonials</span>
                             <h3 class="title">Students Feedback</h3>
                         </div>
-                        <p class="description mt--25 mb--25">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Amet, venenatis
-                            dictum et nec.</p>
+                        <p class="description mt--25 mb--25">
+                            Prepare your child for the digital age.
+                        </p>
                         <h6 class="subtitle">People Love To Learn With Us</h6>
 
                         <div class="row g-5">

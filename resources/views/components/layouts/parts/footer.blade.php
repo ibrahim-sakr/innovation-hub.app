@@ -10,8 +10,7 @@
                             </a>
                         </div>
                         <p class="description">
-                            It is a long established fact that a reader will be distracted by the readable content
-                            of a page when looking at its layout. The point of using Lorem Ipsum.
+                            Unlock your child's limitless potential through our engaging and interactive programs, where they will dive into the exciting realms of robotics, programming, and computational thinking.
                         </p>
                         <ul class="social-share">
                             <li><a href="https://www.facebook.com/InnovationHub.tech"><i class="icon-Fb"></i></a></li>

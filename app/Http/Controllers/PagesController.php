@@ -35,9 +35,12 @@ class PagesController extends Controller
         return view('pages.competitions');
     }
 
-    public function competition(): View
+    public function competition(int $competition): View
     {
-        return view('pages.competition');
+
+        return view('pages.competition', [
+            'competition' => Competition::with('categories')->find($competition)
+        ]);
     }
 
     public function category(): View
