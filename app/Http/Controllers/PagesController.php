@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Activity;
+use App\Models\Competition;
+use App\Models\Course;
 use Illuminate\Contracts\View\View;
 //use Illuminate\Http\Request;
 
@@ -9,7 +12,12 @@ class PagesController extends Controller
 {
     public function home(): View
     {
-        return view('pages.home');
+
+        return view('pages.home', [
+            'courses' => Course::where('feature', 1)->get(),
+            'competitions' => Competition::all(),
+            'activities' => Activity::all(),
+        ]);
     }
 
     public function activities(): View
