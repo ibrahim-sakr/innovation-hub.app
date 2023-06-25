@@ -50,12 +50,20 @@ class PagesController extends Controller
 
     public function courses(): View
     {
-        return view('pages.courses');
+        $courses = Course::all();
+
+        return view('pages.courses', [
+            'courses' => $courses
+        ]);
     }
 
-    public function course(): View
+    public function course(int $course): View
     {
-        return view('pages.course');
+        $course = Course::findOrFail($course);
+
+        return view('pages.course', [
+            'course' => $course
+        ]);
     }
 
     public function feedback(): View
