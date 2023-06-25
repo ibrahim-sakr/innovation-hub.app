@@ -16,12 +16,12 @@ class FeedbackController extends Controller
 {
     public function index(): Factory|View|Application
     {
-        return view('feedback.index');
+        return view('feedback-old.index');
     }
 
     function index2(): Factory|View|Application
     {
-        return view('feedback');
+        return view('feedback-old');
     }
 
     public function feedback(Request $request)
@@ -29,13 +29,13 @@ class FeedbackController extends Controller
         $validation = Validator::make($request->all(), [
             'name' => ['required', 'min:3'],
             'email' => ['required', 'email'],
-            'feedback' => ['required', 'min:5'],
+            'feedback-old' => ['required', 'min:5'],
         ]);
 
         if ($validation->fails()) {
             return redirect()
-                ->route('feedback.index')
-                ->withFragment('feedback')
+                ->route('feedback-old.index')
+                ->withFragment('feedback-old')
                 ->withErrors($validation)
                 ->withInput();
         }
@@ -43,16 +43,16 @@ class FeedbackController extends Controller
         $client = $this->getClient($request->all());
 
         $this->saveFeedback([
-            'feedback' => $request->input('feedback'),
+            'feedback-old' => $request->input('feedback-old'),
             'client_id' => $client->id,
         ]);
 
         Mail::to($client->email)->send(new ClientRegisteredToFeedback());
 
         return redirect()
-            ->route('feedback.index')
-            ->withFragment('feedback')
-            ->with('success', 'you are awesome, and your feedback indeed make us better');
+            ->route('feedback-old.index')
+            ->withFragment('feedback-old')
+            ->with('success', 'you are awesome, and your feedback-old indeed make us better');
     }
 
     private function getClient(array $data): Client
@@ -70,7 +70,7 @@ class FeedbackController extends Controller
     {
         return Feedback::create(
             [
-                'feedback' => $data['feedback'],
+                'feedback-old' => $data['feedback-old'],
                 'client_id' => $data['client_id']
             ],
         );

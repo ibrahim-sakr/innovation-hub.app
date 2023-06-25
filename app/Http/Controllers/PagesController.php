@@ -13,7 +13,7 @@ class PagesController extends Controller
     public function home(): View
     {
 
-        return view('pages.home', [
+        return view('pages.website.home', [
             'courses' => Course::where('feature', 1)->get(),
             'competitions' => Competition::all(),
             'activities' => Activity::all(),
@@ -22,37 +22,37 @@ class PagesController extends Controller
 
     public function activities(): View
     {
-        return view('pages.activities');
+        return view('pages.website.activities');
     }
 
     public function activity(): View
     {
-        return view('pages.activity');
+        return view('pages.website.activity');
     }
 
     public function competitions(): View
     {
-        return view('pages.competitions');
+        return view('pages.website.competitions');
     }
 
     public function competition(int $competition): View
     {
 
-        return view('pages.competition', [
+        return view('pages.website.competition', [
             'competition' => Competition::with('categories')->find($competition)
         ]);
     }
 
     public function category(): View
     {
-        return view('pages.category');
+        return view('pages.website.category');
     }
 
     public function courses(): View
     {
         $courses = Course::all();
 
-        return view('pages.courses', [
+        return view('pages.website.courses', [
             'courses' => $courses
         ]);
     }
@@ -61,28 +61,28 @@ class PagesController extends Controller
     {
         $course = Course::findOrFail($course);
 
-        return view('pages.course', [
+        return view('pages.website.course', [
             'course' => $course
         ]);
     }
 
     public function feedback(): View
     {
-        return view('pages.feedback');
+        return view('pages.website.feedback');
     }
 
     public function weAreHiring(): View
     {
-        return view('pages.hiring');
+        return view('pages.website.hiring');
     }
 
     public function joinUs(): View
     {
-        return view('pages.join-us');
+        return view('pages.website.join-us');
     }
 
     public function mentalMath(): View
     {
-        return view('pages.mental-math');
+        return view('pages.website.mental-math');
     }
 }
