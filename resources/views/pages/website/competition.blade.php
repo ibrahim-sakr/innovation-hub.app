@@ -27,7 +27,7 @@
 
                 <div class="col-lg-5">
                     <div class="banner-thumbnail">
-                        <img class="girl-thumb" src="{{ asset('assets/images/banner/banner-02/banner-01.png') }}" alt="Girl Images" data-sal-delay="150" data-sal="fade" data-sal-duration="800" />
+                        <img class="girl-thumb" src="{{ asset($competition->image) }}" alt="Girl Images" data-sal-delay="150" data-sal="fade" data-sal-duration="800" />
                     </div>
                     <div class="banner-bg d-lg-block d-none">
                         <img class="girl-bg" src="{{ asset('assets/images/banner/banner-02/girl-bg.png') }}" alt="Girl Background" data-sal-delay="150" data-sal="fade" data-sal-duration="800" />
@@ -214,7 +214,7 @@
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="course-details.html">
-                                        <img class="w-100" src="{{ asset('assets/images/course/course-01/course-01.jpg') }}" alt="Course Thumb">
+                                        <img class="w-100" src="{{ asset($category->thumbnail) }}" alt="Course Thumb">
                                     </a>
 {{--                                    <div class="wishlist-top-right">--}}
 {{--                                        <button class="wishlist-btn"><i class="icon-Heart"></i></button>--}}

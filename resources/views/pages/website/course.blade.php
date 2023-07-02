@@ -49,7 +49,7 @@
             <div class="row g-5">
                 <div class="col-lg-12">
                     <div class="main-image thumbnail">
-                        <img class="radius-small" src="{{ asset('') }}assets/images/course/course-details/course-02.jpg" alt="Banner Images">
+                        <img class="radius-small" src="{{ asset($course->image) }}" alt="Banner Images">
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                             <div class="author-meta">
                                 <div class="author-thumb">
                                     <a href="instructor-profile.html">
-                                        <img src="{{ asset('') }}assets/images/instructor/instructor-small/instructor-2.jpg" alt="Author Images">
+                                        <img src="{{ asset('assets/images/instructor/instructor-small/instructor-2.jpg') }}" alt="Author Images">
                                         <span class="author-title">By Leone Xaviona</span>
                                     </a>
                                 </div>
@@ -235,7 +235,7 @@
                                 <div class="course-tab-content">
                                     <div class="course-author-wrapper">
                                         <div class="thumbnail">
-                                            <img src="{{ asset('') }}assets/images/instructor/course-details/instructor-2.jpg" alt="Author Images">
+                                            <img src="{{ asset('assets/images/instructor/course-details/instructor-2.jpg') }}" alt="Author Images">
                                         </div>
                                         <div class="author-content">
                                             <h6 class="title">
@@ -330,7 +330,7 @@
                                         </div>
                                         <div class="edu-comment">
                                             <div class="thumbnail">
-                                                <img src="{{ asset('') }}assets/images/course/student-review/student-1.png" alt="Comment Images">
+                                                <img src="{{ asset('assets/images/course/student-review/student-1.png') }}" alt="Comment Images">
                                             </div>
                                             <div class="comment-content">
                                                 <div class="comment-top">
@@ -360,7 +360,7 @@
                             <div class="eduvibe-widget">
                                 <div class="video-area">
                                     <div class="thumbnail video-popup-wrapper">
-                                        <img class="radius-small w-100" src="{{ asset('') }}assets/images/course/video-bg/course-02.jpg" alt="Course Images">
+                                        <img class="radius-small w-100" src="{{ asset('assets/images/course/video-bg/course-02.jpg') }}" alt="Course Images">
                                         <a href="https://www.youtube.com/watch?v=pNje3bWz7V8" class="video-play-btn position-to-top video-popup-activation">
                                             <span class="play-icon course-details-video-popup"></span>
                                         </a>
@@ -383,7 +383,7 @@
 
                                             <li><span><i class="icon-award-line"></i> Certificate</span><span>Yes</span></li>
 
-                                            <li><span><img class="eduvibe-course-sidebar-img-icon" src="{{ asset('') }}assets/images/icons/percent.svg" alt="icon Thumb"> Pass Percentage</span><span>90%</span></li>
+                                            <li><span><img class="eduvibe-course-sidebar-img-icon" src="{{ asset('assets/images/icons/percent.svg') }}" alt="icon Thumb"> Pass Percentage</span><span>90%</span></li>
 
                                             <li><span><i class="icon-calendar-2-line"></i> Deadline</span><span>25 Dec, 2022</span></li>
 
@@ -415,469 +415,469 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="edu-course-wrapper pt--65">
-                        <div class="section-title text-start mb--20">
-                            <span class="pre-title">Related Courses</span>
-                            <h3 class="title">Courses You May Like</h3>
-                        </div>
+{{--            <div class="row">--}}
+{{--                <div class="col-lg-12">--}}
+{{--                    <div class="edu-course-wrapper pt--65">--}}
+{{--                        <div class="section-title text-start mb--20">--}}
+{{--                            <span class="pre-title">Related Courses</span>--}}
+{{--                            <h3 class="title">Courses You May Like</h3>--}}
+{{--                        </div>--}}
 
-                        <div class="mt--40 edu-slick-button slick-activation-wrapper eduvibe-course-one-carousel eduvibe-course-details-related-course-carousel">
-                            <div class="single-slick-card">
-                                <div class="edu-card card-type-3 radius-small">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="course-details.html">
-                                                <img class="w-100" src="{{ asset('') }}assets/images/course/course-01/course-01.jpg" alt="Course Thumb">
-                                            </a>
-                                            <div class="wishlist-top-right">
-                                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                            </div>
-                                            <div class="top-position status-group left-bottom">
-                                                <span class="eduvibe-status status-03">Language Learning</span>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="card-top">
-                                                <div class="author-meta">
-                                                    <div class="author-thumb">
-                                                        <a href="instructor-profile.html">
-                                                            <img src="{{ asset('') }}assets/images/instructor/instructor-small/instructor-2.jpg" alt="Author Images">
-                                                            <span class="author-title">Nancy Phipps</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <ul class="edu-meta meta-02">
-                                                    <li><i class="icon-file-list-3-line"></i>29 Lessons</li>
-                                                </ul>
-                                            </div>
-                                            <h6 class="title"><a href="#">Master Native English Class This Speaking Skills</a>
-                                            </h6>
-                                            <div class="card-bottom">
-                                                <div class="price-list price-style-02">
-                                                    <div class="price current-price">$29.99</div>
-                                                    <div class="price old-price">$39.99</div>
-                                                </div>
-                                                <div class="edu-rating rating-default">
-                                                    <div class="rating">
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                    </div>
-                                                    <span class="rating-count">(18)</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+{{--                        <div class="mt--40 edu-slick-button slick-activation-wrapper eduvibe-course-one-carousel eduvibe-course-details-related-course-carousel">--}}
+{{--                            <div class="single-slick-card">--}}
+{{--                                <div class="edu-card card-type-3 radius-small">--}}
+{{--                                    <div class="inner">--}}
+{{--                                        <div class="thumbnail">--}}
+{{--                                            <a href="course-details.html">--}}
+{{--                                                <img class="w-100" src="{{ asset('assets/images/course/course-01/course-01.jpg') }}" alt="Course Thumb">--}}
+{{--                                            </a>--}}
+{{--                                            <div class="wishlist-top-right">--}}
+{{--                                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="top-position status-group left-bottom">--}}
+{{--                                                <span class="eduvibe-status status-03">Language Learning</span>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="content">--}}
+{{--                                            <div class="card-top">--}}
+{{--                                                <div class="author-meta">--}}
+{{--                                                    <div class="author-thumb">--}}
+{{--                                                        <a href="instructor-profile.html">--}}
+{{--                                                            <img src="{{ asset('assets/images/instructor/instructor-small/instructor-2.jpg') }}" alt="Author Images">--}}
+{{--                                                            <span class="author-title">Nancy Phipps</span>--}}
+{{--                                                        </a>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <ul class="edu-meta meta-02">--}}
+{{--                                                    <li><i class="icon-file-list-3-line"></i>29 Lessons</li>--}}
+{{--                                                </ul>--}}
+{{--                                            </div>--}}
+{{--                                            <h6 class="title"><a href="#">Master Native English Class This Speaking Skills</a>--}}
+{{--                                            </h6>--}}
+{{--                                            <div class="card-bottom">--}}
+{{--                                                <div class="price-list price-style-02">--}}
+{{--                                                    <div class="price current-price">$29.99</div>--}}
+{{--                                                    <div class="price old-price">$39.99</div>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="edu-rating rating-default">--}}
+{{--                                                    <div class="rating">--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                    </div>--}}
+{{--                                                    <span class="rating-count">(18)</span>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
 
-                                    <div class="card-hover-action">
-                                        <div class="hover-content">
-                                            <div class="content-top">
-                                                <div class="top-status-bar">
-                                                    <span class="eduvibe-status status-03">Language Learning</span>
-                                                </div>
-                                                <div class="top-wishlist-bar">
-                                                    <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                                </div>
-                                            </div>
+{{--                                    <div class="card-hover-action">--}}
+{{--                                        <div class="hover-content">--}}
+{{--                                            <div class="content-top">--}}
+{{--                                                <div class="top-status-bar">--}}
+{{--                                                    <span class="eduvibe-status status-03">Language Learning</span>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="top-wishlist-bar">--}}
+{{--                                                    <button class="wishlist-btn"><i class="icon-Heart"></i></button>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
 
-                                            <h6 class="title"><a href="course-details.html">Master Native English Class This Speaking Skills</a></h6>
+{{--                                            <h6 class="title"><a href="course-details.html">Master Native English Class This Speaking Skills</a></h6>--}}
 
-                                            <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat.</p>
+{{--                                            <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat.</p>--}}
 
-                                            <div class="price-list price-style-02">
-                                                <div class="price current-price">$29.99</div>
-                                                <div class="price old-price">$39.99</div>
-                                            </div>
+{{--                                            <div class="price-list price-style-02">--}}
+{{--                                                <div class="price current-price">$29.99</div>--}}
+{{--                                                <div class="price old-price">$39.99</div>--}}
+{{--                                            </div>--}}
 
-                                            <div class="hover-bottom-content">
-                                                <div class="author-meta">
-                                                    <div class="author-thumb">
-                                                        <a href="instructor-profile.html">
-                                                            <img src="{{ asset('') }}assets/images/instructor/instructor-small/instructor-2.jpg" alt="Author Images">
-                                                            <span class="author-title">Nancy Phipps</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <ul class="edu-meta meta-02">
-                                                    <li><i class="icon-file-list-3-line"></i>29 Lessons</li>
-                                                </ul>
-                                            </div>
-                                            <div class="read-more-btn">
-                                                <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
-                                            </div>
+{{--                                            <div class="hover-bottom-content">--}}
+{{--                                                <div class="author-meta">--}}
+{{--                                                    <div class="author-thumb">--}}
+{{--                                                        <a href="instructor-profile.html">--}}
+{{--                                                            <img src="{{ asset('assets/images/instructor/instructor-small/instructor-2.jpg') }}" alt="Author Images">--}}
+{{--                                                            <span class="author-title">Nancy Phipps</span>--}}
+{{--                                                        </a>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <ul class="edu-meta meta-02">--}}
+{{--                                                    <li><i class="icon-file-list-3-line"></i>29 Lessons</li>--}}
+{{--                                                </ul>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="read-more-btn">--}}
+{{--                                                <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>--}}
+{{--                                            </div>--}}
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-slick-card">
-                                <div class="edu-card card-type-3 radius-small">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="course-details.html">
-                                                <img class="w-100" src="{{ asset('') }}assets/images/course/course-01/course-02.jpg" alt="Course Thumb">
-                                            </a>
-                                            <div class="wishlist-top-right">
-                                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                            </div>
-                                            <div class="top-position status-group left-bottom">
-                                                <span class="eduvibe-status status-03">Language Learning</span>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="card-top">
-                                                <div class="author-meta">
-                                                    <div class="author-thumb">
-                                                        <a href="instructor-profile.html">
-                                                            <img src="{{ asset('') }}assets/images/instructor/instructor-small/instructor-8.jpg" alt="Author Images">
-                                                            <span class="author-title">Alice McCoy</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <ul class="edu-meta meta-02">
-                                                    <li><i class="icon-file-list-3-line"></i>15 Lessons</li>
-                                                </ul>
-                                            </div>
-                                            <h6 class="title"><a href="#">The Basic Of Financial Analyst Online Course</a>
-                                            </h6>
-                                            <div class="card-bottom">
-                                                <div class="price-list price-style-02">
-                                                    <div class="price current-price">$35.99</div>
-                                                    <div class="price old-price">$49.99</div>
-                                                </div>
-                                                <div class="edu-rating rating-default">
-                                                    <div class="rating">
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                    </div>
-                                                    <span class="rating-count">(17)</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="single-slick-card">--}}
+{{--                                <div class="edu-card card-type-3 radius-small">--}}
+{{--                                    <div class="inner">--}}
+{{--                                        <div class="thumbnail">--}}
+{{--                                            <a href="course-details.html">--}}
+{{--                                                <img class="w-100" src="{{ asset('assets/images/course/course-01/course-02.jpg') }}" alt="Course Thumb">--}}
+{{--                                            </a>--}}
+{{--                                            <div class="wishlist-top-right">--}}
+{{--                                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="top-position status-group left-bottom">--}}
+{{--                                                <span class="eduvibe-status status-03">Language Learning</span>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="content">--}}
+{{--                                            <div class="card-top">--}}
+{{--                                                <div class="author-meta">--}}
+{{--                                                    <div class="author-thumb">--}}
+{{--                                                        <a href="instructor-profile.html">--}}
+{{--                                                            <img src="{{ asset('assets/images/instructor/instructor-small/instructor-8.jpg') }}" alt="Author Images">--}}
+{{--                                                            <span class="author-title">Alice McCoy</span>--}}
+{{--                                                        </a>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <ul class="edu-meta meta-02">--}}
+{{--                                                    <li><i class="icon-file-list-3-line"></i>15 Lessons</li>--}}
+{{--                                                </ul>--}}
+{{--                                            </div>--}}
+{{--                                            <h6 class="title"><a href="#">The Basic Of Financial Analyst Online Course</a>--}}
+{{--                                            </h6>--}}
+{{--                                            <div class="card-bottom">--}}
+{{--                                                <div class="price-list price-style-02">--}}
+{{--                                                    <div class="price current-price">$35.99</div>--}}
+{{--                                                    <div class="price old-price">$49.99</div>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="edu-rating rating-default">--}}
+{{--                                                    <div class="rating">--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                    </div>--}}
+{{--                                                    <span class="rating-count">(17)</span>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
 
-                                    <div class="card-hover-action">
-                                        <div class="hover-content">
-                                            <div class="content-top">
-                                                <div class="top-status-bar">
-                                                    <span class="eduvibe-status status-03">Language Learning</span>
-                                                </div>
-                                                <div class="top-wishlist-bar">
-                                                    <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                                </div>
-                                            </div>
+{{--                                    <div class="card-hover-action">--}}
+{{--                                        <div class="hover-content">--}}
+{{--                                            <div class="content-top">--}}
+{{--                                                <div class="top-status-bar">--}}
+{{--                                                    <span class="eduvibe-status status-03">Language Learning</span>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="top-wishlist-bar">--}}
+{{--                                                    <button class="wishlist-btn"><i class="icon-Heart"></i></button>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
 
-                                            <h6 class="title"><a href="course-details.html">The Basic Of Financial Analyst Online Course</a></h6>
+{{--                                            <h6 class="title"><a href="course-details.html">The Basic Of Financial Analyst Online Course</a></h6>--}}
 
-                                            <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat.</p>
+{{--                                            <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat.</p>--}}
 
-                                            <div class="price-list price-style-02">
-                                                <div class="price current-price">$35.99</div>
-                                                <div class="price old-price">$49.99</div>
-                                            </div>
+{{--                                            <div class="price-list price-style-02">--}}
+{{--                                                <div class="price current-price">$35.99</div>--}}
+{{--                                                <div class="price old-price">$49.99</div>--}}
+{{--                                            </div>--}}
 
-                                            <div class="hover-bottom-content">
-                                                <div class="author-meta">
-                                                    <div class="author-thumb">
-                                                        <a href="instructor-profile.html">
-                                                            <img src="{{ asset('') }}assets/images/instructor/instructor-small/instructor-8.jpg" alt="Author Images">
-                                                            <span class="author-title">Alice McCoy</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <ul class="edu-meta meta-02">
-                                                    <li><i class="icon-file-list-3-line"></i>15 Lessons</li>
-                                                </ul>
-                                            </div>
-                                            <div class="read-more-btn">
-                                                <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
-                                            </div>
+{{--                                            <div class="hover-bottom-content">--}}
+{{--                                                <div class="author-meta">--}}
+{{--                                                    <div class="author-thumb">--}}
+{{--                                                        <a href="instructor-profile.html">--}}
+{{--                                                            <img src="{{ asset('assets/images/instructor/instructor-small/instructor-8.jpg') }}" alt="Author Images">--}}
+{{--                                                            <span class="author-title">Alice McCoy</span>--}}
+{{--                                                        </a>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <ul class="edu-meta meta-02">--}}
+{{--                                                    <li><i class="icon-file-list-3-line"></i>15 Lessons</li>--}}
+{{--                                                </ul>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="read-more-btn">--}}
+{{--                                                <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>--}}
+{{--                                            </div>--}}
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-slick-card">
-                                <div class="edu-card card-type-3 radius-small">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="course-details.html">
-                                                <img class="w-100" src="{{ asset('') }}assets/images/course/course-01/course-03.jpg" alt="Course Thumb">
-                                            </a>
-                                            <div class="wishlist-top-right">
-                                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                            </div>
-                                            <div class="top-position status-group left-bottom">
-                                                <span class="eduvibe-status status-03">Language Learning</span>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="card-top">
-                                                <div class="author-meta">
-                                                    <div class="author-thumb">
-                                                        <a href="instructor-profile.html">
-                                                            <img src="{{ asset('') }}assets/images/instructor/instructor-small/instructor-1.jpg" alt="Author Images">
-                                                            <span class="author-title">David Reija</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <ul class="edu-meta meta-02">
-                                                    <li><i class="icon-file-list-3-line"></i>29 Lessons</li>
-                                                </ul>
-                                            </div>
-                                            <h6 class="title"><a href="#">Introduction to Javascript for The Beginners</a>
-                                            </h6>
-                                            <div class="card-bottom">
-                                                <div class="price-list price-style-02">
-                                                    <div class="price current-price">$67.99</div>
-                                                    <div class="price old-price">$109.99</div>
-                                                </div>
-                                                <div class="edu-rating rating-default">
-                                                    <div class="rating">
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                    </div>
-                                                    <span class="rating-count">(20)</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="single-slick-card">--}}
+{{--                                <div class="edu-card card-type-3 radius-small">--}}
+{{--                                    <div class="inner">--}}
+{{--                                        <div class="thumbnail">--}}
+{{--                                            <a href="course-details.html">--}}
+{{--                                                <img class="w-100" src="{{ asset('assets/images/course/course-01/course-03.jpg') }}" alt="Course Thumb">--}}
+{{--                                            </a>--}}
+{{--                                            <div class="wishlist-top-right">--}}
+{{--                                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="top-position status-group left-bottom">--}}
+{{--                                                <span class="eduvibe-status status-03">Language Learning</span>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="content">--}}
+{{--                                            <div class="card-top">--}}
+{{--                                                <div class="author-meta">--}}
+{{--                                                    <div class="author-thumb">--}}
+{{--                                                        <a href="instructor-profile.html">--}}
+{{--                                                            <img src="{{ asset('assets/images/instructor/instructor-small/instructor-1.jpg') }}" alt="Author Images">--}}
+{{--                                                            <span class="author-title">David Reija</span>--}}
+{{--                                                        </a>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <ul class="edu-meta meta-02">--}}
+{{--                                                    <li><i class="icon-file-list-3-line"></i>29 Lessons</li>--}}
+{{--                                                </ul>--}}
+{{--                                            </div>--}}
+{{--                                            <h6 class="title"><a href="#">Introduction to Javascript for The Beginners</a>--}}
+{{--                                            </h6>--}}
+{{--                                            <div class="card-bottom">--}}
+{{--                                                <div class="price-list price-style-02">--}}
+{{--                                                    <div class="price current-price">$67.99</div>--}}
+{{--                                                    <div class="price old-price">$109.99</div>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="edu-rating rating-default">--}}
+{{--                                                    <div class="rating">--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                    </div>--}}
+{{--                                                    <span class="rating-count">(20)</span>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
 
-                                    <div class="card-hover-action">
-                                        <div class="hover-content">
-                                            <div class="content-top">
-                                                <div class="top-status-bar">
-                                                    <span class="eduvibe-status status-03">Language Learning</span>
-                                                </div>
-                                                <div class="top-wishlist-bar">
-                                                    <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                                </div>
-                                            </div>
+{{--                                    <div class="card-hover-action">--}}
+{{--                                        <div class="hover-content">--}}
+{{--                                            <div class="content-top">--}}
+{{--                                                <div class="top-status-bar">--}}
+{{--                                                    <span class="eduvibe-status status-03">Language Learning</span>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="top-wishlist-bar">--}}
+{{--                                                    <button class="wishlist-btn"><i class="icon-Heart"></i></button>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
 
-                                            <h6 class="title"><a href="course-details.html">Introduction to Javascript for The Beginners</a></h6>
+{{--                                            <h6 class="title"><a href="course-details.html">Introduction to Javascript for The Beginners</a></h6>--}}
 
-                                            <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat.</p>
+{{--                                            <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat.</p>--}}
 
-                                            <div class="price-list price-style-02">
-                                                <div class="price current-price">$67.99</div>
-                                                <div class="price old-price">$109.99</div>
-                                            </div>
+{{--                                            <div class="price-list price-style-02">--}}
+{{--                                                <div class="price current-price">$67.99</div>--}}
+{{--                                                <div class="price old-price">$109.99</div>--}}
+{{--                                            </div>--}}
 
-                                            <div class="hover-bottom-content">
-                                                <div class="author-meta">
-                                                    <div class="author-thumb">
-                                                        <a href="instructor-profile.html">
-                                                            <img src="{{ asset('') }}assets/images/instructor/instructor-small/instructor-1.jpg" alt="Author Images">
-                                                            <span class="author-title">David Reija</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <ul class="edu-meta meta-02">
-                                                    <li><i class="icon-file-list-3-line"></i>29 Lessons</li>
-                                                </ul>
-                                            </div>
-                                            <div class="read-more-btn">
-                                                <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
-                                            </div>
+{{--                                            <div class="hover-bottom-content">--}}
+{{--                                                <div class="author-meta">--}}
+{{--                                                    <div class="author-thumb">--}}
+{{--                                                        <a href="instructor-profile.html">--}}
+{{--                                                            <img src="{{ asset('assets/images/instructor/instructor-small/instructor-1.jpg') }}" alt="Author Images">--}}
+{{--                                                            <span class="author-title">David Reija</span>--}}
+{{--                                                        </a>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <ul class="edu-meta meta-02">--}}
+{{--                                                    <li><i class="icon-file-list-3-line"></i>29 Lessons</li>--}}
+{{--                                                </ul>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="read-more-btn">--}}
+{{--                                                <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>--}}
+{{--                                            </div>--}}
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-slick-card">
-                                <div class="edu-card card-type-3 radius-small">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="course-details.html">
-                                                <img class="w-100" src="{{ asset('') }}assets/images/course/course-01/course-04.jpg" alt="Course Thumb">
-                                            </a>
-                                            <div class="wishlist-top-right">
-                                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                            </div>
-                                            <div class="top-position status-group left-bottom">
-                                                <span class="eduvibe-status status-03">Graphics Design</span>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="card-top">
-                                                <div class="author-meta">
-                                                    <div class="author-thumb">
-                                                        <a href="instructor-profile.html">
-                                                            <img src="{{ asset('') }}assets/images/instructor/instructor-small/instructor-1.jpg" alt="Author Images">
-                                                            <span class="author-title">David Reija</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <ul class="edu-meta meta-02">
-                                                    <li><i class="icon-file-list-3-line"></i>29 Lessons</li>
-                                                </ul>
-                                            </div>
-                                            <h6 class="title"><a href="#">Oracle SQL Developer : Essentials Tips and Tricks</a>
-                                            </h6>
-                                            <div class="card-bottom">
-                                                <div class="price-list price-style-02">
-                                                    <div class="price current-price">$67.99</div>
-                                                    <div class="price old-price">$109.99</div>
-                                                </div>
-                                                <div class="edu-rating rating-default">
-                                                    <div class="rating">
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                    </div>
-                                                    <span class="rating-count">(20)</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="single-slick-card">--}}
+{{--                                <div class="edu-card card-type-3 radius-small">--}}
+{{--                                    <div class="inner">--}}
+{{--                                        <div class="thumbnail">--}}
+{{--                                            <a href="course-details.html">--}}
+{{--                                                <img class="w-100" src="{{ asset('assets/images/course/course-01/course-04.jpg') }}" alt="Course Thumb">--}}
+{{--                                            </a>--}}
+{{--                                            <div class="wishlist-top-right">--}}
+{{--                                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="top-position status-group left-bottom">--}}
+{{--                                                <span class="eduvibe-status status-03">Graphics Design</span>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="content">--}}
+{{--                                            <div class="card-top">--}}
+{{--                                                <div class="author-meta">--}}
+{{--                                                    <div class="author-thumb">--}}
+{{--                                                        <a href="instructor-profile.html">--}}
+{{--                                                            <img src="{{ asset('assets/images/instructor/instructor-small/instructor-1.jpg') }}" alt="Author Images">--}}
+{{--                                                            <span class="author-title">David Reija</span>--}}
+{{--                                                        </a>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <ul class="edu-meta meta-02">--}}
+{{--                                                    <li><i class="icon-file-list-3-line"></i>29 Lessons</li>--}}
+{{--                                                </ul>--}}
+{{--                                            </div>--}}
+{{--                                            <h6 class="title"><a href="#">Oracle SQL Developer : Essentials Tips and Tricks</a>--}}
+{{--                                            </h6>--}}
+{{--                                            <div class="card-bottom">--}}
+{{--                                                <div class="price-list price-style-02">--}}
+{{--                                                    <div class="price current-price">$67.99</div>--}}
+{{--                                                    <div class="price old-price">$109.99</div>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="edu-rating rating-default">--}}
+{{--                                                    <div class="rating">--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                    </div>--}}
+{{--                                                    <span class="rating-count">(20)</span>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
 
-                                    <div class="card-hover-action">
-                                        <div class="hover-content">
-                                            <div class="content-top">
-                                                <div class="top-status-bar">
-                                                    <span class="eduvibe-status status-03">Language Learning</span>
-                                                </div>
-                                                <div class="top-wishlist-bar">
-                                                    <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                                </div>
-                                            </div>
+{{--                                    <div class="card-hover-action">--}}
+{{--                                        <div class="hover-content">--}}
+{{--                                            <div class="content-top">--}}
+{{--                                                <div class="top-status-bar">--}}
+{{--                                                    <span class="eduvibe-status status-03">Language Learning</span>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="top-wishlist-bar">--}}
+{{--                                                    <button class="wishlist-btn"><i class="icon-Heart"></i></button>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
 
-                                            <h6 class="title"><a href="course-details.html">Oracle SQL Developer : Essentials Tips and Tricks</a></h6>
+{{--                                            <h6 class="title"><a href="course-details.html">Oracle SQL Developer : Essentials Tips and Tricks</a></h6>--}}
 
-                                            <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat.</p>
+{{--                                            <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat.</p>--}}
 
-                                            <div class="price-list price-style-02">
-                                                <div class="price current-price">$67.99</div>
-                                                <div class="price old-price">$109.99</div>
-                                            </div>
+{{--                                            <div class="price-list price-style-02">--}}
+{{--                                                <div class="price current-price">$67.99</div>--}}
+{{--                                                <div class="price old-price">$109.99</div>--}}
+{{--                                            </div>--}}
 
-                                            <div class="hover-bottom-content">
-                                                <div class="author-meta">
-                                                    <div class="author-thumb">
-                                                        <a href="instructor-profile.html">
-                                                            <img src="{{ asset('') }}assets/images/instructor/instructor-small/instructor-1.jpg" alt="Author Images">
-                                                            <span class="author-title">David Reija</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <ul class="edu-meta meta-02">
-                                                    <li><i class="icon-file-list-3-line"></i>29 Lessons</li>
-                                                </ul>
-                                            </div>
-                                            <div class="read-more-btn">
-                                                <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
-                                            </div>
+{{--                                            <div class="hover-bottom-content">--}}
+{{--                                                <div class="author-meta">--}}
+{{--                                                    <div class="author-thumb">--}}
+{{--                                                        <a href="instructor-profile.html">--}}
+{{--                                                            <img src="{{ asset('assets/images/instructor/instructor-small/instructor-1.jpg') }}" alt="Author Images">--}}
+{{--                                                            <span class="author-title">David Reija</span>--}}
+{{--                                                        </a>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <ul class="edu-meta meta-02">--}}
+{{--                                                    <li><i class="icon-file-list-3-line"></i>29 Lessons</li>--}}
+{{--                                                </ul>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="read-more-btn">--}}
+{{--                                                <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>--}}
+{{--                                            </div>--}}
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-slick-card">
-                                <div class="edu-card card-type-3 radius-small">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="course-details.html">
-                                                <img class="w-100" src="{{ asset('') }}assets/images/course/course-01/course-05.jpg" alt="Course Thumb">
-                                            </a>
-                                            <div class="wishlist-top-right">
-                                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                            </div>
-                                            <div class="top-position status-group left-bottom">
-                                                <span class="eduvibe-status status-03">Language Learning</span>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="card-top">
-                                                <div class="author-meta">
-                                                    <div class="author-thumb">
-                                                        <a href="instructor-profile.html">
-                                                            <img src="{{ asset('') }}assets/images/instructor/instructor-small/instructor-6.jpg" alt="Author Images">
-                                                            <span class="author-title">Linda Bacote</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <ul class="edu-meta meta-02">
-                                                    <li><i class="icon-file-list-3-line"></i>16 Lessons</li>
-                                                </ul>
-                                            </div>
-                                            <h6 class="title"><a href="#">Java Programming Masterclass for Software Developers</a>
-                                            </h6>
-                                            <div class="card-bottom">
-                                                <div class="price-list price-style-02">
-                                                    <div class="price current-price">$89.99</div>
-                                                    <div class="price old-price">$99.99</div>
-                                                </div>
-                                                <div class="edu-rating rating-default">
-                                                    <div class="rating">
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                        <i class="icon-Star"></i>
-                                                    </div>
-                                                    <span class="rating-count">(12)</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="single-slick-card">--}}
+{{--                                <div class="edu-card card-type-3 radius-small">--}}
+{{--                                    <div class="inner">--}}
+{{--                                        <div class="thumbnail">--}}
+{{--                                            <a href="course-details.html">--}}
+{{--                                                <img class="w-100" src="{{ asset('assets/images/course/course-01/course-05.jpg') }}" alt="Course Thumb">--}}
+{{--                                            </a>--}}
+{{--                                            <div class="wishlist-top-right">--}}
+{{--                                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="top-position status-group left-bottom">--}}
+{{--                                                <span class="eduvibe-status status-03">Language Learning</span>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="content">--}}
+{{--                                            <div class="card-top">--}}
+{{--                                                <div class="author-meta">--}}
+{{--                                                    <div class="author-thumb">--}}
+{{--                                                        <a href="instructor-profile.html">--}}
+{{--                                                            <img src="{{ asset('assets/images/instructor/instructor-small/instructor-6.jpg') }}" alt="Author Images">--}}
+{{--                                                            <span class="author-title">Linda Bacote</span>--}}
+{{--                                                        </a>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <ul class="edu-meta meta-02">--}}
+{{--                                                    <li><i class="icon-file-list-3-line"></i>16 Lessons</li>--}}
+{{--                                                </ul>--}}
+{{--                                            </div>--}}
+{{--                                            <h6 class="title"><a href="#">Java Programming Masterclass for Software Developers</a>--}}
+{{--                                            </h6>--}}
+{{--                                            <div class="card-bottom">--}}
+{{--                                                <div class="price-list price-style-02">--}}
+{{--                                                    <div class="price current-price">$89.99</div>--}}
+{{--                                                    <div class="price old-price">$99.99</div>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="edu-rating rating-default">--}}
+{{--                                                    <div class="rating">--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                        <i class="icon-Star"></i>--}}
+{{--                                                    </div>--}}
+{{--                                                    <span class="rating-count">(12)</span>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
 
-                                    <div class="card-hover-action">
-                                        <div class="hover-content">
-                                            <div class="content-top">
-                                                <div class="top-status-bar">
-                                                    <span class="eduvibe-status status-03">Language Learning</span>
-                                                </div>
-                                                <div class="top-wishlist-bar">
-                                                    <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                                </div>
-                                            </div>
+{{--                                    <div class="card-hover-action">--}}
+{{--                                        <div class="hover-content">--}}
+{{--                                            <div class="content-top">--}}
+{{--                                                <div class="top-status-bar">--}}
+{{--                                                    <span class="eduvibe-status status-03">Language Learning</span>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="top-wishlist-bar">--}}
+{{--                                                    <button class="wishlist-btn"><i class="icon-Heart"></i></button>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
 
-                                            <h6 class="title"><a href="course-details.html">Java Programming Masterclass for Software Developers</a></h6>
+{{--                                            <h6 class="title"><a href="course-details.html">Java Programming Masterclass for Software Developers</a></h6>--}}
 
-                                            <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat.</p>
+{{--                                            <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat.</p>--}}
 
-                                            <div class="price-list price-style-02">
-                                                <div class="price current-price">$89.99</div>
-                                                <div class="price old-price">$99.99</div>
-                                            </div>
+{{--                                            <div class="price-list price-style-02">--}}
+{{--                                                <div class="price current-price">$89.99</div>--}}
+{{--                                                <div class="price old-price">$99.99</div>--}}
+{{--                                            </div>--}}
 
-                                            <div class="hover-bottom-content">
-                                                <div class="author-meta">
-                                                    <div class="author-thumb">
-                                                        <a href="instructor-profile.html">
-                                                            <img src="{{ asset('') }}assets/images/instructor/instructor-small/instructor-6.jpg" alt="Author Images">
-                                                            <span class="author-title">Linda Bacote</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <ul class="edu-meta meta-02">
-                                                    <li><i class="icon-file-list-3-line"></i>16 Lessons</li>
-                                                </ul>
-                                            </div>
-                                            <div class="read-more-btn">
-                                                <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
-                                            </div>
+{{--                                            <div class="hover-bottom-content">--}}
+{{--                                                <div class="author-meta">--}}
+{{--                                                    <div class="author-thumb">--}}
+{{--                                                        <a href="instructor-profile.html">--}}
+{{--                                                            <img src="{{ asset('assets/images/instructor/instructor-small/instructor-6.jpg') }}" alt="Author Images">--}}
+{{--                                                            <span class="author-title">Linda Bacote</span>--}}
+{{--                                                        </a>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <ul class="edu-meta meta-02">--}}
+{{--                                                    <li><i class="icon-file-list-3-line"></i>16 Lessons</li>--}}
+{{--                                                </ul>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="read-more-btn">--}}
+{{--                                                <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>--}}
+{{--                                            </div>--}}
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
     </div>
 

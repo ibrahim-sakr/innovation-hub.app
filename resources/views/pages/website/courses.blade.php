@@ -74,7 +74,7 @@
                                     <div class="inner">
                                         <div class="thumbnail">
                                             <a href="{{ route('course', ['course' => $course->id]) }}">
-                                                <img class="w-100" src="{{ asset('assets/images/course/course-01/course-01.jpg') }}" alt="Course Meta">
+                                                <img class="w-100" src="{{ asset($course->thumbnail) }}" alt="Course Meta">
                                             </a>
                                             <div class="top-position status-group left-bottom">
                                                 <span class="eduvibe-status status-03">{{ $course->level }}</span>

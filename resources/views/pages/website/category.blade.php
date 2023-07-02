@@ -5,7 +5,7 @@
             <div class="row g-5">
                 <div class="col-lg-12">
                     <div class="thumbnail">
-                        <img src="{{ asset('assets/images/event/event-details/event-01.jpg') }}" alt="Event Images">
+                        <img src="{{ asset($category->image) }}" alt="Event Images">
                     </div>
                 </div>
             </div>

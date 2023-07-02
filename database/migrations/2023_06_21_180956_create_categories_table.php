@@ -18,6 +18,8 @@ return new class extends Migration
             $table->integer('age_from');
             $table->integer('age_to')->nullable();
             $table->text('description');
+            $table->string('thumbnail');
+            $table->string('image');
             $table->timestamps();
         });
     }

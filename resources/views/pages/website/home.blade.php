@@ -24,7 +24,7 @@
                     <div class="col-lg-6 order-1 order-lg-2">
                         <div class="banner-image">
                             <div class="thumbnail" data-sal-delay="150" data-sal="fade" data-sal-duration="800"><img
-                                    src="{{ asset('assets/images/banner/banner-04/banner-03.png') }}"
+                                    src="{{ asset('assets/images/s3/static/home-banner.png') }}"
                                     alt="Banner Images"/></div>
                             <div class="round-images" data-sal-delay="150" data-sal="fade" data-sal-duration="800"><img
                                     src="{{ asset('assets/images/banner/banner-04/hero-04-round.png') }}"
@@ -99,7 +99,7 @@
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="{{ route('course', [ 'course' => $course->id ]) }}">
-                                        <img class="w-100" src="assets/images/course/course-01/course-01.jpg"
+                                        <img class="w-100" src="{{ asset($course->thumbnail) }}"
                                              alt="Course Meta">
                                     </a>
                                     <div class="top-position status-group left-top">
@@ -218,7 +218,7 @@
                                 </div>
                                 <div class="thumbnail">
                                     <a href="{{ route('competition', ['competition' => $competition->id]) }}">
-                                        <img src="assets/images/blog/post-02/post-01.jpg" alt="Blog Images">
+                                        <img src="{{ asset($competition->thumbnail) }}" alt="Blog Images">
                                     </a>
                                 </div>
                             </div>

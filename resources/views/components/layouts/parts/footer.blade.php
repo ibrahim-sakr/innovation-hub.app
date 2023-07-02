@@ -6,7 +6,7 @@
                     <div class="edu-footer-widget">
                         <div class="logo">
                             <a href="{{ route('home') }}">
-                                <img class="logo-light" src="{{ asset('assets/images/logo/logo-white.png')  }}" alt="Innovation hub Logo">
+                                <img class="logo-light" src="{{ asset('assets/images/s3/static/logo-white.png')  }}" alt="Innovation hub Logo">
                             </a>
                         </div>
                         <p class="description">

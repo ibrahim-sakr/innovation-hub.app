@@ -4,7 +4,7 @@
             <div class="col-lg-4 col-xl-3 col-md-6 col-6">
                 <div class="logo">
                     <a href="{{ route('home') }}">
-                        <img class="logo-light" src="{{ asset('assets/images/logo/logo.png') }}"
+                        <img class="logo-light" src="{{ asset('assets/images/s3/static/logo.png') }}"
                              alt="Innovation Hub Logo">
                     </a>
                 </div>

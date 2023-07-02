@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Activity;
+use App\Models\Category;
 use App\Models\Competition;
 use App\Models\Course;
 use Illuminate\Contracts\View\View;
@@ -43,9 +44,12 @@ class PagesController extends Controller
         ]);
     }
 
-    public function category(): View
+    public function category(int $category): View
     {
-        return view('pages.website.category');
+
+        return view('pages.website.category', [
+            'category' => Category::find($category)
+        ]);
     }
 
     public function courses(): View
