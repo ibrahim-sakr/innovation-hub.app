@@ -13,10 +13,10 @@
             <div class="col-lg-6 d-none d-xl-block">
                 <nav class="mainmenu-nav d-none d-lg-block">
                     <ul class="mainmenu">
-                        <li><a href="#courses">Courses</a>
-                        <li><a href="#competitions">Competitions</a>
-                        <li><a href="#activities">Activities</a>
-                        <li><a href="#testimonials">Testimonials</a>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#competitions">Competitions</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
                     </ul>
                 </nav>
             </div>
@@ -40,6 +40,7 @@
                 </div>
             </div>
         </div>
+        <x-layouts.parts.flash-message></x-layouts.parts.flash-message>
     </div>
 </header>
 
@@ -48,7 +49,7 @@
         <div class="header-top">
             <div class="logo">
                 <a href="{{ route('home') }}">
-                    <img src="{{ asset('assets/images/logo/logo.png') }}" alt="Innovation Hub Logo">
+                    <img src="{{ asset('assets/images/s3/static/logo.png') }}" alt="Innovation Hub Logo">
                 </a>
             </div>
             <div class="close-menu">
@@ -58,10 +59,10 @@
             </div>
         </div>
         <ul class="mainmenu">
-            <li><a href="#courses">Courses</a>
-            <li><a href="#competitions">Competitions</a>
-            <li><a href="#activities">Activities</a>
-            <li><a href="#testimonials">Testimonials</a>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#competitions">Competitions</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
         </ul>
     </div>
 </div>
@@ -76,15 +77,31 @@
     <div class="inner">
         <div class="checkout-page-style login-form-box">
             <h3 class="mb-30">Free Session</h3>
-            <form class="login-form" action="#">
+            <form class="login-form" action="{{ route('register.free-session') }}" method="post">
+                @csrf
+                @method('post')
                 <div class="input-box mb--30">
-                    <input type="text" placeholder="Full Name"/>
+                    <input required type="text" name="parent_name" placeholder="Parent Name"/>
                 </div>
                 <div class="input-box mb--30">
-                    <input type="email" placeholder="Email"/>
+                    <input required type="email" name="parent_email" placeholder="Parent Email"/>
                 </div>
                 <div class="input-box mb--30">
-                    <input type="password" placeholder="Password"/>
+                    <input required type="text" name="parent_phone" placeholder="Parent Phone"/>
+                </div>
+                <div class="input-box mb--30">
+                    <input required type="text" name="child_name" placeholder="Child Name"/>
+                </div>
+                <div class="input-box mb--30">
+                    <input required type="number" name="child_age" placeholder="Child Age" min="0" max="20"/>
+                </div>
+                <div class="input-box mb--30">
+                    <select name="schedule" required>
+                        <option value="" disabled selected hidden>Choose a Schedule</option>
+                        @foreach(App\Models\Schedule::all() as $schedule)
+                            <option value="{{ $schedule->id }}">{{ $schedule->name }}</option>
+                        @endforeach
+                    </select>
                 </div>
                 <button class="rn-btn edu-btn w-100 mb--30" type="submit">
                     <span>Register</span>

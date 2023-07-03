@@ -6,7 +6,10 @@ use App\Models\Activity;
 use App\Models\Category;
 use App\Models\Competition;
 use App\Models\Course;
+use App\Models\Schedule;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Session;
+
 //use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -18,6 +21,7 @@ class PagesController extends Controller
             'courses' => Course::where('feature', 1)->get(),
             'competitions' => Competition::all(),
             'activities' => Activity::all(),
+            'schedules' => Schedule::all(),
         ]);
     }
 
@@ -75,12 +79,12 @@ class PagesController extends Controller
         return view('pages.website.feedback');
     }
 
-    public function weAreHiring(): View
+    public function hiring(): View
     {
         return view('pages.website.hiring');
     }
 
-    public function joinUs(): View
+    public function join(): View
     {
         return view('pages.website.join-us');
     }

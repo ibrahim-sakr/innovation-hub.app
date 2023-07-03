@@ -21,6 +21,7 @@
                 </nav>
             </div>
         </div>
+        <x-layouts.parts.flash-message></x-layouts.parts.flash-message>
     </div>
 </header>
 <div class="popup-mobile-menu">

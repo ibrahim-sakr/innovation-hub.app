@@ -15,12 +15,9 @@
                             <p class="description" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
                                 {{ $competition->description }}
                             </p>
-                            <div class="read-more-btn" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
-                                <a class="edu-btn" href="#">Get Started Today <i class="icon-arrow-right-line-right"></i></a>
-                            </div>
-                            <div class="arrow-sign d-lg-block d-none">
-                                <img src="{{ asset('assets/images/banner/banner-02/arrow.png') }}" alt="Banner Images" data-sal-delay="150" data-sal="fade" data-sal-duration="800">
-                            </div>
+{{--                            <div class="arrow-sign d-lg-block d-none">--}}
+{{--                                <img src="{{ asset('assets/images/banner/banner-02/arrow.png') }}" alt="Banner Images" data-sal-delay="150" data-sal="fade" data-sal-duration="800">--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                 </div>

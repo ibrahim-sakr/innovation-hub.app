@@ -25380,4 +25380,18 @@ Gallery Item
     font-size: 60px;
 }
 
+.checkout-page-style select {
+    background: #F5F5F5;
+    border-radius: 5px;
+    height: 60px;
+    padding: 0 25px;
+    font-weight: 500;
+    color: var(--color-body);
+    border: 1px solid transparent;
+}
+
+.font-p {
+    font-size: var(--font-size-b2);
+}
+
 /*# sourceMappingURL=../maps/style.css.map */

@@ -1,6 +1,8 @@
 (function (window, document, $, undefined) {
     'use strict';
 
+    $('div.flash-message').delay(3000).fadeOut(350);
+
     let eduvibeJs = {
         i: function (e) {
             eduvibeJs.d();
