@@ -48,7 +48,7 @@ class ActivitySubscribed extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.activity-subscribe',
+            view: 'emails.activities.' . $this->activity->slug,
         );
     }
 
