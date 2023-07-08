@@ -21,6 +21,9 @@ return new class extends Migration
             $table->text('short_description');
             $table->text('description');
             $table->string('thumbnail');
+            $table->string('start_date');
+            $table->string('start_time');
+            $table->string('location');
             $table->string('image');
             $table->timestamps();
         });

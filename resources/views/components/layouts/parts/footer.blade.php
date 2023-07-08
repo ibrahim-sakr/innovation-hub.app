@@ -2,7 +2,7 @@
     <div class="footer-top">
         <div class="container eduvibe-animated-shape">
             <div class="row g-5">
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class="col-lg-8 col-md-6 col-sm-12 col-12">
                     <div class="edu-footer-widget">
                         <div class="logo">
                             <a href="{{ route('home') }}">
@@ -14,28 +14,26 @@
                         </p>
                         <ul class="social-share">
                             <li><a href="https://www.facebook.com/InnovationHub.tech"><i class="icon-Fb"></i></a></li>
-                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                            <li><a href="#"><i class="icon-Pinterest"></i></a></li>
-                            <li><a href="#"><i class="icon-Twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/innovationhub-tech" target="_blank"><i class="icon-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="edu-footer-widget explore-widget">
-                        <h5 class="widget-title">Explore</h5>
-                        <div class="inner">
-                            <ul class="footer-link link-hover">
-                                <li><a href="about-us-1.html"><i class="icon-Double-arrow"></i>About Us</a></li>
-                                <li><a href="event-list.html"><i class="icon-Double-arrow"></i>Upcoming Events</a></li>
-                                <li><a href="blog-standard.html"><i class="icon-Double-arrow"></i>Blog & News</a></li>
-                                <li><a href="faq.html"><i class="icon-Double-arrow"></i>FAQ Question</a></li>
-                                <li><a href="testimonial.html"><i class="icon-Double-arrow"></i>Testimonial</a></li>
-                                <li><a href="privacy-policy.html"><i class="icon-Double-arrow"></i>Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-lg-4 col-md-6 col-sm-6 col-12">--}}
+{{--                    <div class="edu-footer-widget explore-widget">--}}
+{{--                        <h5 class="widget-title">Explore</h5>--}}
+{{--                        <div class="inner">--}}
+{{--                            <ul class="footer-link link-hover">--}}
+{{--                                <li><a href="about-us-1.html"><i class="icon-Double-arrow"></i>About Us</a></li>--}}
+{{--                                <li><a href="event-list.html"><i class="icon-Double-arrow"></i>Upcoming Events</a></li>--}}
+{{--                                <li><a href="blog-standard.html"><i class="icon-Double-arrow"></i>Blog & News</a></li>--}}
+{{--                                <li><a href="faq.html"><i class="icon-Double-arrow"></i>FAQ Question</a></li>--}}
+{{--                                <li><a href="testimonial.html"><i class="icon-Double-arrow"></i>Testimonial</a></li>--}}
+{{--                                <li><a href="privacy-policy.html"><i class="icon-Double-arrow"></i>Privacy Policy</a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="edu-footer-widget">
@@ -43,11 +41,9 @@
                         <div class="inner">
                             <div class="widget-information">
                                 <ul class="information-list">
-                                    <li><i class="icon-map-pin-line"></i>275 Quadra Street Victoria Road, New York
-                                    </li>
-                                    <li><i class="icon-phone-fill"></i><a href="tel: + 1 (237) 382-2839">+ 1 (237) 382-2839</a></li>
-                                    <li><i class="icon-phone-fill"></i><a href="tel: + 1 (237) 382-2840">+ 1 (237) 382-2840</a></li>
-                                    <li><i class="icon-mail-line-2"></i><a target="_blank" href="mailto:yourmailaddress@example.com">yourmailaddress@example.com</a></li>
+                                    <li><i class="icon-map-pin-line"></i>Nasr City, Makraam Ebaid</li>
+                                    <li><i class="icon-phone-fill"></i><a href="tel: +201124338883">+2 01124338883</a></li>
+                                    <li><i class="icon-mail-line-2"></i><a target="_blank" href="mailto:support@innovation-hub.app">support@innovation-hub.app</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -27,6 +27,9 @@ class CategorySeeder extends Seeder
                 'image'=> 'assets/images/s3/categories/fll-discover.png',
                 'created_at' => $now,
                 'updated_at' => $now,
+                'start_date' => '29 Jul, 2023',
+                'start_time' => '02:00 PM, 06:30 PM',
+                'location' => 'Nasr City, Makraam Ebaid'
             ],
             [
                 'id' => 2,
@@ -41,7 +44,9 @@ class CategorySeeder extends Seeder
                 'image'=> 'assets/images/s3/categories/fll-explore.png',
                 'created_at' => $now,
                 'updated_at' => $now,
-            ],
+                'start_date' => '29 Jul, 2023',
+                'start_time' => '04:00 PM, 04:30 PM',
+                'location' => 'Nasr City, Makraam Ebaid'            ],
             [
                 'id' => 3,
                 'competition_id' => 1,
@@ -55,6 +60,9 @@ class CategorySeeder extends Seeder
                 'image'=> 'assets/images/s3/categories/fll-challenge.png',
                 'created_at' => $now,
                 'updated_at' => $now,
+                'start_date' => '29 Jul, 2023',
+                'start_time' => '11:00 AM',
+                'location' => 'Nasr City, Makraam Ebaid'
             ],
             [
                 'id' => 4,
@@ -69,6 +77,9 @@ class CategorySeeder extends Seeder
                 'image'=> 'assets/images/s3/categories/rc-kid-coder.png',
                 'created_at' => $now,
                 'updated_at' => $now,
+                'start_date' => '27 Jul, 2023',
+                'start_time' => '06:30 PM',
+                'location' => 'Nasr City, Makraam Ebaid'
             ],
             [
                 'id' => 5,
@@ -83,6 +94,9 @@ class CategorySeeder extends Seeder
                 'image'=> 'assets/images/s3/categories/rc-web-challenge.png',
                 'created_at' => $now,
                 'updated_at' => $now,
+                'start_date' => '25 Jul, 2023',
+                'start_time' => '04:30 PM',
+                'location' => 'Nasr City, Makraam Ebaid'
             ],
             [
                 'id' => 6,
@@ -97,7 +111,9 @@ class CategorySeeder extends Seeder
                 'image'=> 'assets/images/s3/categories/rc-python-challenge.png',
                 'created_at' => $now,
                 'updated_at' => $now,
-            ],
+                'start_date' => '29 Jul, 2023',
+                'start_time' => '06:30 PM',
+                'location' => 'Nasr City, Makraam Ebaid'            ],
         ];
 
         Category::truncate();
