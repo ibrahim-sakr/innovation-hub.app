@@ -16,6 +16,7 @@ class ActivitiesSeeder extends Seeder
         $activities = [
             [
                 'id' => 1,
+                'slug'=> 'sequencing-and-debugging',
                 'name' => 'Sequencing & debugging',
                 'description' => 'Sequencing activity involves putting a set of instructions or events in a specific order to achieve a particular outcome or goal.',
                 'icon' => 'Destination',
@@ -24,6 +25,7 @@ class ActivitiesSeeder extends Seeder
             ],
             [
                 'id' => 2,
+                'slug'=> 'binary-code',
                 'name' => 'Binary code',
                 'description' => 'Binary code activity is the use of 1s and 0s to represent data and instructions in computing, which is essential for all computer operations and applications.',
                 'icon' => 'Browser',
@@ -32,6 +34,7 @@ class ActivitiesSeeder extends Seeder
             ],
             [
                 'id' => 3,
+                'slug'=> 'multiplication-table',
                 'name' => 'Multiplication table',
                 'description' => 'Multiplication activity involves finding the product of two or more numbers by adding a number to itself a certain number of times, which is a fundamental arithmetic operation used in many mathematical and computational tasks.',
                 'icon' => 'Lock',
@@ -40,6 +43,7 @@ class ActivitiesSeeder extends Seeder
             ],
             [
                 'id' => 4,
+                'slug'=> 'programing-resources',
                 'name' => 'Programing Resources',
                 'description' => 'Free resources of programming include online tutorials, open-source software, forums, and communities that provide educational materials and support for learning to code.',
                 'icon' => 'Lock',
