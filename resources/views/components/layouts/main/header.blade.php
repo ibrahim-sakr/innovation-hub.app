@@ -23,13 +23,13 @@
 
             <div class="col-lg-8 col-xl-3 col-md-6 col-6">
                 <div class="header-right d-flex justify-content-end">
-                    <div class="header-menu-bar">
-                        <div class="quote-icon quote-user d-none d-md-block ml--15 ml_sm--5">
-                            <button class="edu-btn btn-medium header-purchase-btn search-trigger">
-                                Free Session
-                            </button>
-                        </div>
-                    </div>
+{{--                    <div class="header-menu-bar">--}}
+{{--                        <div class="quote-icon quote-user d-none d-md-block ml--15 ml_sm--5">--}}
+{{--                            <button class="edu-btn btn-medium header-purchase-btn search-trigger">--}}
+{{--                                Free Session--}}
+{{--                            </button>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                     <div class="mobile-menu-bar ml--15 ml_sm--5 d-block d-xl-none">
                         <div class="hamberger">
                             <button class="white-box-icon hamberger-button">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ActivitySubscribed;
 use App\Mail\CategorySubscribed;
 use App\Mail\FreeSessionSubscribed;
 use App\Models\Registration;
@@ -41,7 +42,7 @@ class RegistrationController extends Controller
                 'is_emailed' => 1
             ]);
         } catch (\Exception $e) {
-            Log::error('failed to send email');
+            Log::error($e->getMessage(), $e->getTrace());
         }
 
         flash('you got an email with extra information');
@@ -81,9 +82,7 @@ class RegistrationController extends Controller
                 'is_emailed' => 1
             ]);
         } catch (\Exception $e) {
-            $e->getMessage();
-            $e->getTrace();
-            Log::error('failed to send email');
+            Log::error($e->getMessage(), $e->getTrace());
         }
 
         flash('you got an email with extra information');
@@ -91,8 +90,30 @@ class RegistrationController extends Controller
         return redirect()->back();
     }
 
-    public function activity(): RedirectResponse
+    public function activity(Request $request): RedirectResponse
     {
+        $register = Registration::create([
+            'model_id' => $request->input('activity_id'),
+            'model_type' => Registration::TYPE_ACTIVITY,
+            'details' => [
+                'name' => $request->input('name'),
+                'email' => $request->input('email'),
+                'whatsapp' => $request->input('whatsapp')
+            ]
+        ]);
+
+        try {
+            // send email
+            Mail::to($request->input('email'))->send(new ActivitySubscribed($register));
+
+            $register->update([
+                'is_emailed' => 1
+            ]);
+        } catch (\Exception $e) {
+            Log::error($e->getMessage(), $e->getTrace());
+        }
+
+        flash('you got an email with extra information');
 
         return redirect()->back();
     }

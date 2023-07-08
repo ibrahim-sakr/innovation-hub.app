@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\Competition;
 use App\Models\Course;
 use App\Models\Schedule;
+use App\Models\Testimonial;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Session;
 
@@ -22,6 +23,7 @@ class PagesController extends Controller
             'competitions' => Competition::all(),
             'activities' => Activity::all(),
             'schedules' => Schedule::all(),
+            'testimonials' => Testimonial::all()
         ]);
     }
 
@@ -30,9 +32,11 @@ class PagesController extends Controller
         return view('pages.website.activities');
     }
 
-    public function activity(): View
+    public function activity(int $activity): View
     {
-        return view('pages.website.activity');
+        return view('pages.website.activity', [
+            'activity' => Activity::find($activity)
+        ]);
     }
 
     public function competitions(): View

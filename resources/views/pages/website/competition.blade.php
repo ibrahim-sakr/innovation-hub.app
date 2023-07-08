@@ -51,8 +51,8 @@
             <div class="row g-5">
                 <div class="col-lg-12">
                     <div class="section-title" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <span class="pre-title">TOP CATEGORIES</span>
-                        <h3 class="title">Browse Popular Category</h3>
+{{--                        <span class="pre-title">TOP CATEGORIES</span>--}}
+                        <h3 class="title">Our Core Values</h3>
                     </div>
                 </div>
             </div>
@@ -69,11 +69,8 @@
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h6 class="title"><a href="#">Art & Design</a></h6>
-                                    <span>23 Items</span>
-                                </div>
-                                <div class="hover-action">
-                                    <a class="read-more-btn" href="#"><i class="icon-arrow-right-line-right"></i></a>
+                                    <h6 class="title"><a href="#">Discovery</a></h6>
+                                    <span>We explore new skills and ideas.</span>
                                 </div>
                             </div>
                         </div>
@@ -90,11 +87,8 @@
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h6 class="title"><a href="#">Content Writting</a></h6>
-                                    <span>39 Items</span>
-                                </div>
-                                <div class="hover-action">
-                                    <a class="read-more-btn" href="#"><i class="icon-arrow-right-line-right"></i></a>
+                                    <h6 class="title"><a href="#">Innovation</a></h6>
+                                    <span>We use creativity and persistence to solve problems.</span>
                                 </div>
                             </div>
                         </div>
@@ -111,11 +105,8 @@
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h6 class="title"><a href="#">Data Science</a></h6>
-                                    <span>15 Items</span>
-                                </div>
-                                <div class="hover-action">
-                                    <a class="read-more-btn" href="#"><i class="icon-arrow-right-line-right"></i></a>
+                                    <h6 class="title"><a href="#">Impact</a></h6>
+                                    <span>We apply what we learn to improve our world.</span>
                                 </div>
                             </div>
                         </div>
@@ -132,11 +123,8 @@
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h6 class="title"><a href="#">Health & Fitness</a></h6>
-                                    <span>36 Items</span>
-                                </div>
-                                <div class="hover-action">
-                                    <a class="read-more-btn" href="#"><i class="icon-arrow-right-line-right"></i></a>
+                                    <h6 class="title"><a href="#">Inclusion</a></h6>
+                                    <span>We respect each other and embrace our differences.</span>
                                 </div>
                             </div>
                         </div>
@@ -153,11 +141,8 @@
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h6 class="title"><a href="#">Music Learning</a></h6>
-                                    <span>59 Items</span>
-                                </div>
-                                <div class="hover-action">
-                                    <a class="read-more-btn" href="#"><i class="icon-arrow-right-line-right"></i></a>
+                                    <h6 class="title"><a href="#">Teamwork</a></h6>
+                                    <span>We are stronger when we work together.</span>
                                 </div>
                             </div>
                         </div>
@@ -174,11 +159,8 @@
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h6 class="title"><a href="#">Data Science</a></h6>
-                                    <span>45 Items</span>
-                                </div>
-                                <div class="hover-action">
-                                    <a class="read-more-btn" href="#"><i class="icon-arrow-right-line-right"></i></a>
+                                    <h6 class="title"><a href="#">Fun</a></h6>
+                                    <span>We enjoy and celebrate what we do!</span>
                                 </div>
                             </div>
                         </div>

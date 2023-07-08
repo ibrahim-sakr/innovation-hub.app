@@ -30,11 +30,11 @@
                     <div class="content text-center">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="{{ asset('assets/images/logo/logo.png') }}" alt="Logo Images">
+                                <img src="{{ asset('assets/images/s3/static/logo.png') }}" alt="Logo Images">
                             </a>
                         </div>
                         <h1 class="title">We Are Making <br /> Something Specials</h1>
-                        <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>
+{{--                        <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>--}}
                         <div class="newsletter-style-6">
                             <a class="edu-btn" href="{{ route('home') }}">Back to Home</a>
                         </div>

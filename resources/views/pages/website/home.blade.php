@@ -98,7 +98,7 @@
                         <div class="edu-card card-type-1 bg-white radius-small">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="{{ route('course', [ 'course' => $course->id ]) }}">
+                                    <a href="#">
                                         <img class="w-100" src="{{ asset($course->thumbnail) }}"
                                              alt="Course Meta">
                                     </a>
@@ -118,7 +118,7 @@
                                         </li>
                                     </ul>
                                     <h6 class="title">
-                                        <a href="{{ route('course', [ 'course' => $course->id ]) }}">{{ $course->name }}</a>
+                                        <a href="#">{{ $course->name }}</a>
                                     </h6>
                                     <div class="edu-rating rating-default">
                                         <p>
@@ -134,9 +134,9 @@
                                         <span class="rating-count">age ({{ $course->age_to ? $course->age_from . ' - ' . $course->age_to : $course->age_from . '+'}})</span>
                                     </div>
                                     <div class="card-bottom filters-button-group">
-                                        <a class="btn-transparent" href="{{ route('course', [ 'course' => $course->id] ) }}">
-                                            Read More<i class="icon-arrow-right-line-right"></i>
-                                        </a>
+{{--                                        <a class="btn-transparent" href="{{ route('course', [ 'course' => $course->id] ) }}">--}}
+{{--                                            Read More<i class="icon-arrow-right-line-right"></i>--}}
+{{--                                        </a>--}}
                                         <ul class="edu-meta meta-01">
                                             <li><i class="icon-account-circle-line"></i>{{ $course->students_count }}
                                                 Students
@@ -258,7 +258,7 @@
             <div class="row eduvibe-about-one-service g-5 mt--20">
                 @foreach($activities as $activity)
                     <!-- Start Service Grid  -->
-                    <div class="col-lg-4 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="col-lg-3 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                         <div class="service-card service-card-3 text-left shape-bg-{{ $activity->id }} bg-grey">
                             <div class="inner">
                                 <div class="icon">
@@ -271,7 +271,7 @@
                                         <a href="{{ route('activity', [ 'activity' => $activity->id ]) }}">{{ $activity->name }}</a>
                                     </h6>
                                     <p class="description">
-                                        {{ $activity->description }}
+                                        {{ substr($activity->description, 0, 130) }}...
                                     </p>
                                     <div class="read-more-btn">
                                         <a class="btn-transparent sm-size heading-color" href="{{ route('activity', [ 'activity' => $activity->id ]) }}">
@@ -312,75 +312,26 @@
                         <!-- Start Tastimonial Card  -->
                         <div class="testimonial-card-box variation-2">
                             <div class="inner testimonial-card-activation-1 slick-arrow-style-2">
+                                @foreach($testimonials as $testimonial)
                                 <div class="single-card">
                                     <div class="rating">
-                                        <i class="on icon-Star"></i>
-                                        <i class="on icon-Star"></i>
-                                        <i class="on icon-Star"></i>
-                                        <i class="on icon-Star"></i>
-                                        <i class="on icon-Star"></i>
+                                        @for($i = 1; $i <= $testimonial->starts; $i++)
+                                            <i class="on icon-Star"></i>
+                                        @endfor
                                     </div>
-                                    <p class="description">“Lorem ipsum dolor sit amet, consectetur dloril adipiscing
-                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo.”</p>
+                                    <p class="description">“{{ $testimonial->content }}”</p>
                                     <div class="client-info">
-                                        <div class="thumbnail">
-                                            <img src="assets/images/testimonial/testimonial-04/client-04.png"
-                                                 alt="Client Images">
-                                        </div>
+{{--                                        <div class="thumbnail">--}}
+{{--                                            <img src="assets/images/testimonial/testimonial-04/client-04.png"--}}
+{{--                                                 alt="Client Images">--}}
+{{--                                        </div>--}}
                                         <div class="content">
-                                            <h6 class="title">Adam Smith</h6>
-                                            <span class="designation">Web Developer</span>
+                                            <h6 class="title">{{ $testimonial->name }}</h6>
+                                            <span class="designation">{{ $testimonial->label }}</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="single-card">
-                                    <div class="rating">
-                                        <i class="on icon-Star"></i>
-                                        <i class="on icon-Star"></i>
-                                        <i class="on icon-Star"></i>
-                                        <i class="on icon-Star"></i>
-                                        <i class="on icon-Star"></i>
-                                    </div>
-                                    <p class="description">“Quis autem vel eum iure reprehenderit qui in ea voluptate
-                                        velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
-                                        quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos
-                                        ducimus qui blanditiis.”</p>
-                                    <div class="client-info">
-                                        <div class="thumbnail">
-                                            <img src="assets/images/testimonial/testimonial-04/client-01.png"
-                                                 alt="Client Images">
-                                        </div>
-                                        <div class="content">
-                                            <h6 class="title">David M. Bard</h6>
-                                            <span class="designation">Laravel Developer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-card">
-                                    <div class="rating">
-                                        <i class="on icon-Star"></i>
-                                        <i class="on icon-Star"></i>
-                                        <i class="on icon-Star"></i>
-                                        <i class="on icon-Star"></i>
-                                        <i class="on icon-Star"></i>
-                                    </div>
-                                    <p class="description">“Duis aute irure dolor in reprehenderit in voluptate velit
-                                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                                        finibus bonorum.”</p>
-                                    <div class="client-info">
-                                        <div class="thumbnail">
-                                            <img src="assets/images/testimonial/testimonial-04/client-03.png"
-                                                 alt="Client Images">
-                                        </div>
-                                        <div class="content">
-                                            <h6 class="title">Lorraine D. Raines</h6>
-                                            <span class="designation">WordPress Expert</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                         <!-- End Tastimonial Card  -->

@@ -13,24 +13,25 @@
                 <div class="col-lg-7">
                     <div class="content">
                         <h3 class="title">{{ $category->title }}</h3>
-                        <p>FIRST ® LEGO® League Discover is the youngest of three divisions of FIRST LEGO League, created to inspire youth to experiment and grow their critical thinking, coding, and design skills through fun handson STEM learning and robotics.</p>
-                        <p>All FIRST ® programs are built on a foundation of Core Values, celebrating discovery, impact, inclusion, innovation, teamwork and fun.</p>
+                        {!! $category->description !!}
+{{--                        <p>FIRST ® LEGO® League Discover is the youngest of three divisions of FIRST LEGO League, created to inspire youth to experiment and grow their critical thinking, coding, and design skills through fun handson STEM learning and robotics.</p>--}}
+{{--                        <p>All FIRST ® programs are built on a foundation of Core Values, celebrating discovery, impact, inclusion, innovation, teamwork and fun.</p>--}}
 
-                        <ul class="column-gallery gallery-column-2">
-                            <li><img src="{{ asset('assets/images/s3/uploads/3.jpg') }}" alt="Gallery Images"></li>
-                            <li><img src="{{ asset('assets/images/s3/uploads/5.jpg') }}" alt="Gallery Images"></li>
-                        </ul>
+{{--                        <ul class="column-gallery gallery-column-2">--}}
+{{--                            <li><img src="{{ asset('assets/images/s3/uploads/3.jpg') }}" alt="Gallery Images"></li>--}}
+{{--                            <li><img src="{{ asset('assets/images/s3/uploads/5.jpg') }}" alt="Gallery Images"></li>--}}
+{{--                        </ul>--}}
 
-                        <h4>What have teams been doing?</h4>
-                        <p>Teams of children ages 4-6 have been given meaningful problems to solve linked to a relevant real-world theme. They have designed and built solutions, learning how to work together to develop their ideas. Using LEGO Education STEAM Park sets, they have iterated on their DUPLO® constructions and shared their achievements with others.</p>
+{{--                        <h4>What have teams been doing?</h4>--}}
+{{--                        <p>Teams of children ages 4-6 have been given meaningful problems to solve linked to a relevant real-world theme. They have designed and built solutions, learning how to work together to develop their ideas. Using LEGO Education STEAM Park sets, they have iterated on their DUPLO® constructions and shared their achievements with others.</p>--}}
 
-                        <h4>WHAT’S HAPPENING?</h4>
-                        <ul class="list-style-1 mb--20">
-                            <li><i class="icon-checkbox-circle-fill-solid"></i> Building: Teams will work together to build a (team) model that showcases all they have learned about the real-world problem they investigated.</li>
-                            <li><i class="icon-checkbox-circle-fill-solid"></i> Special Challenge: Different teams will be matched with each other to solve a special challenge to design and build a new part that will join their models together.</li>
-                            <li><i class="icon-checkbox-circle-fill-solid"></i> Reviewing: As children are working, the reviewers will talk with them about what and how they are building. The teams will explain their designs and the work in their Engineering Notebooks.</li>
-                            <li><i class="icon-checkbox-circle-fill-solid"></i> Celebration: The event will end in an award ceremony where each child is celebrated for their amazing achievements. Confidence is boosted as the children receive recognition for their hard work</li>
-                        </ul>
+{{--                        <h4>WHAT’S HAPPENING?</h4>--}}
+{{--                        <ul class="list-style-1 mb--20">--}}
+{{--                            <li><i class="icon-checkbox-circle-fill-solid"></i> Building: Teams will work together to build a (team) model that showcases all they have learned about the real-world problem they investigated.</li>--}}
+{{--                            <li><i class="icon-checkbox-circle-fill-solid"></i> Special Challenge: Different teams will be matched with each other to solve a special challenge to design and build a new part that will join their models together.</li>--}}
+{{--                            <li><i class="icon-checkbox-circle-fill-solid"></i> Reviewing: As children are working, the reviewers will talk with them about what and how they are building. The teams will explain their designs and the work in their Engineering Notebooks.</li>--}}
+{{--                            <li><i class="icon-checkbox-circle-fill-solid"></i> Celebration: The event will end in an award ceremony where each child is celebrated for their amazing achievements. Confidence is boosted as the children receive recognition for their hard work</li>--}}
+{{--                        </ul>--}}
                     </div>
                 </div>
                 <div class="col-lg-5">
