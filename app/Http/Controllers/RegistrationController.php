@@ -81,6 +81,8 @@ class RegistrationController extends Controller
                 'is_emailed' => 1
             ]);
         } catch (\Exception $e) {
+            $e->getMessage();
+            $e->getTrace();
             Log::error('failed to send email');
         }
 

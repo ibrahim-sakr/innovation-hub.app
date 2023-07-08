@@ -280,7 +280,7 @@
                                     </h6>
 
                                     <p class="description">
-                                        {!! $category->description !!}
+                                        {!! $category->short_description !!}
                                     </p>
 
 {{--                                    <div class="price-list price-style-02">--}}

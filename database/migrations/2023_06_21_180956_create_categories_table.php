@@ -15,8 +15,10 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('competition_id');
             $table->string('name');
+            $table->string('title');
             $table->integer('age_from');
             $table->integer('age_to')->nullable();
+            $table->text('short_description');
             $table->text('description');
             $table->string('thumbnail');
             $table->string('image');
