@@ -2,23 +2,28 @@
 
 namespace App\Mail;
 
+use App\Models\Category;
 use App\Models\Registration;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Str;
 
 class CategorySubscribed extends Mailable
 {
     use Queueable, SerializesModels;
+
+    private $category;
 
     /**
      * Create a new message instance.
      */
     public function __construct(protected Registration $registered)
     {
-        //
+        $this->category = Category::find($registered->model_id);
     }
 
     /**
@@ -48,6 +53,12 @@ class CategorySubscribed extends Mailable
      */
     public function attachments(): array
     {
-        return [];
+        $fileName = Str::snake($this->category->name, '-') . '.jpeg';
+
+        return [
+            Attachment::fromPath(storage_path('categories/' . $fileName))
+                ->as($fileName)
+                ->withMime('image/jpeg'),
+        ];
     }
 }
