@@ -194,7 +194,7 @@
             <div class="row g-5 mt--30">
                 @foreach($competitions as $competition)
                     <!-- Start Blog Grid  -->
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up"
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-sal-delay="150" data-sal="slide-up"
                          data-sal-duration="800">
                         <div class="edu-blog blog-type-3 radius-small bg-color-white">
                             <div class="inner">

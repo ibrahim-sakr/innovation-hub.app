@@ -113,7 +113,42 @@ class CategorySeeder extends Seeder
                 'updated_at' => $now,
                 'start_date' => '29 Jul, 2023',
                 'start_time' => '06:30 PM',
-                'location' => 'Nasr City, Makraam Ebaid'            ],
+                'location' => 'Nasr City, Makraam Ebaid'
+            ],
+            [
+                'id' => 7,
+                'competition_id' => 3,
+                'name' => 'Line follower',
+                'title' => 'Line follower',
+                'age_from' => 9,
+                'age_to' => 13,
+                'short_description' => 'In this competition, it is required to design and program a robot that can automatically detect and follow the line in the shortest time',
+                'description' => '<p>In this competition, it is required to design and program a robot that can automatically detect and follow the line in the shortest time.</p><ul class="column-gallery gallery-column-2"><li><img src="https://innovation-hub.app/assets/images/s3/uploads/13.jpg" alt="Gallery Images"></li><li><img src="https://innovation-hub.app/assets/images/s3/uploads/14.jpg" alt="Gallery Images"></li></ul><ul class="list-style-1 mb--20"><li><i class="icon-checkbox-circle-fill-solid"></i> Beginners: For ages 9-15 years old using Lego ev3 or vex robots only.</li><li><i class="icon-checkbox-circle-fill-solid"></i> Advanced: for ages more than 9 old using any type of robots</li></ul>',
+                'thumbnail'=> 'assets/images/s3/categories/orce-line-follower-thumb.jpg',
+                'image'=> 'assets/images/s3/categories/orce-line-follower.jpg',
+                'created_at' => $now,
+                'updated_at' => $now,
+                'start_date' => '04 Sept 2023, 06 Sept 2023',
+                'start_time' => '06:30 PM',
+                'location' => 'Nasr City, Makraam Ebaid'
+            ],
+            [
+                'id' => 8,
+                'competition_id' => 3,
+                'name' => 'Open challenge',
+                'title' => 'Open challenge',
+                'age_from' => 13,
+                'age_to' => 16,
+                'short_description' => 'It is an open challenge, where teams solve the national or international problem in the industrial',
+                'description' => '<p>It is an open challenge, where teams solve the national or international problem in the industrial, agricultural, or medical field.</p><p>Design and program a robot to solve it or reduce its effects.</p><ul class="column-gallery gallery-column-2"><li><img src="https://innovation-hub.app/assets/images/s3/uploads/15.jpg" alt="Gallery Images"></li><li><img src="https://innovation-hub.app/assets/images/s3/uploads/16.jpg" alt="Gallery Images"></li></ul>',
+                'thumbnail'=> 'assets/images/s3/categories/orce-open-challenge-thumb.jpg',
+                'image'=> 'assets/images/s3/categories/orce-open-challenge.jpg',
+                'created_at' => $now,
+                'updated_at' => $now,
+                'start_date' => '04 Sept 2023, 06 Sept 2023',
+                'start_time' => '06:30 PM',
+                'location' => 'Nasr City, Makraam Ebaid'
+            ],
         ];
 
         Category::truncate();
