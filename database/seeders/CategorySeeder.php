@@ -129,7 +129,7 @@ class CategorySeeder extends Seeder
                 'created_at' => $now,
                 'updated_at' => $now,
                 'start_date' => '04 Sept 2023, 06 Sept 2023',
-                'start_time' => '06:30 PM',
+                'start_time' => '05:00 PM',
                 'location' => 'Nasr City, Makraam Ebaid'
             ],
             [
@@ -146,7 +146,7 @@ class CategorySeeder extends Seeder
                 'created_at' => $now,
                 'updated_at' => $now,
                 'start_date' => '04 Sept 2023, 06 Sept 2023',
-                'start_time' => '06:30 PM',
+                'start_time' => '07:00 PM',
                 'location' => 'Nasr City, Makraam Ebaid'
             ],
         ];
