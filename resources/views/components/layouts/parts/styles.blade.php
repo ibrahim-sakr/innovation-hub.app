@@ -7,4 +7,5 @@
 <link rel="stylesheet" href="{{ asset('assets/css/vendor/lightbox.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/vendor/animation.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/vendor/jqueru-ui-min.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/formsmd.rtl.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">

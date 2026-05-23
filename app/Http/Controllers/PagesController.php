@@ -6,6 +6,7 @@ use App\Models\Activity;
 use App\Models\Category;
 use App\Models\Competition;
 use App\Models\Course;
+use App\Models\Questionnaire;
 use App\Models\Schedule;
 use App\Models\Testimonial;
 use Illuminate\Contracts\View\View;
@@ -96,5 +97,23 @@ class PagesController extends Controller
     public function mentalMath(): View
     {
         return view('pages.website.mental-math');
+    }
+
+    public function ask(): View
+    {
+        return view('pages.website.ask');
+    }
+
+    public function askSubmit()
+    {
+        // remove unwanted fields
+        $data = request()->except(['_end', '_rid', '_sheetName', '_submitted']);
+
+        // create new record with the rest of fields
+        $questionnaire = new Questionnaire;
+        $questionnaire->answers = $data;
+        $questionnaire->save();
+
+        return $data;
     }
 }

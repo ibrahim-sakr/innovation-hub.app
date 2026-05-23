@@ -16,6 +16,8 @@ Route::get('/feedback', [PagesController::class, 'feedback'])->name('feedback');
 Route::get('/hiring', [PagesController::class, 'hiring'])->name('hiring');
 //Route::get('/join', [PagesController::class, 'join'])->name('join');
 Route::get('/mental-math', [PagesController::class, 'mentalMath'])->name('mental-math');
+Route::get('/learning-journey-discovery', [PagesController::class, 'ask'])->name('learning-journey-discovery');
+Route::post('/learning-journey-discovery', [PagesController::class, 'askSubmit'])->name('learning-journey-discovery-submit');
 
 Route::name('register.')->prefix('registration')->group(function(){
     Route::post('/free-session', [RegistrationController::class, 'freeSession'])->name('free-session');

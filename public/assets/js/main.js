@@ -728,6 +728,325 @@
 
     eduvibeJs.i();
 
+    const composer = new Composer({
+        id: "ask-form",
+        postUrl: "/learning-journey-discovery",
+        formStyle: "classic",
+    });
+
+    composer.textInput("q1", {
+        question: "ما إسم بطل رحلتنا",
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "3%"
+    });
+    composer.choiceInput("q2", {
+        question: "كم عمر بطل رحلتنا",
+        choices: ['7-9', '9-11', '11-15'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "6%"
+    });
+    composer.choiceInput("q3", {
+        question: "ما أكثر شيء تتمنين تطويره لدى طفلك من خلال تعلم البرمجة",
+        choices: ['التركيز', 'التفكير والإبداع', 'المهارات الإجتماعية', 'حل المشكلات', 'حب التعلم', 'إستغلال الطاقة بشكل إيجابي', 'العمل الجماعي', 'الثقة بالنفس'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "9%"
+    });
+    composer.choiceInput("q4", {
+        question: "يشعر بطل رحلتنا بالملل سريعًا من الشرح التقليدي",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "12%"
+    });
+    composer.choiceInput("q5", {
+        question: "يفضل الحركة أو التفاعل أثناء التعلم",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "15%"
+    });
+    composer.choiceInput("q6", {
+        question: "يتحمس أكثر عندما يكون التعلم على شكل لعبة أو تحدي" ,
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "18%"
+    });
+    composer.choiceInput("q7", {
+        question: "ينتقل بسرعة من نشاط إلى آخر",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "21%"
+    });
+    composer.choiceInput("q8", {
+        question: "يتفاعل بشكل أفضل مع الأنشطة العملية والتجارب",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "24%"
+    });
+    composer.choiceInput("q9", {
+        question: "يحب المنافسة والتحديات السريعة",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "27%"
+    });
+    composer.choiceInput("q10", {
+        question: "يتعلم بشكل أسرع عند مشاهدة الصور أو الفيديوهات",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "30%"
+    });
+    composer.choiceInput("q11", {
+        question: "يفضل تجربة الأشياء بنفسه بدل الاستماع للشرح فقط",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "33%"
+    });
+    composer.choiceInput("q12", {
+        question: "يتذكر ما يراه أكثر مما يسمعه",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "36%"
+    });
+    composer.choiceInput("q13", {
+        question: "يحب بناء أو تركيب الأشياء",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "39%"
+    });
+    composer.choiceInput("q14", {
+        question: "يستمتع باكتشاف حلول جديدة للمشكلات",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "42%"
+    });
+    composer.choiceInput("q15", {
+        question: "يطرح الكثير من الأسئلة بدافع الفضول",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "45%"
+    });
+    composer.choiceInput("q16", {
+        question: "يستمتع بالتعلم أو العمل مع الآخرين",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "48%"
+    });
+    composer.choiceInput("q17", {
+        question: "يفضل أحيانًا العمل بمفرده",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "51%"
+    });
+    composer.choiceInput("q18", {
+        question: "يتحفز أكثر عند التشجيع والمدح",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "54%"
+    });
+    composer.choiceInput("q19", {
+        question: "يشعر بالحماس عند وجود تحديات أو منافسة",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "58%"
+    });
+    composer.choiceInput("q20", {
+        question: "يتردد أو يتوتر في المجموعات الكبيرة",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "61%"
+    });
+    composer.choiceInput("q21", {
+        question: "ُيظهر تفاعلًا أفضل عندما يشعر بالراحة والحرية",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "64%"
+    });
+    composer.choiceInput("q22", {
+        question: "ينجذب إلى الألعاب أو الأنشطة التي تحتوي على تحديات وحلول",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "67%"
+    });
+    composer.choiceInput("q23", {
+        question: "يهتم بالتكنولوجيا أو الأجهزة أو الروبوتات",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "70%"
+    });
+    composer.choiceInput("q24", {
+        question: "يستمتع بالأفكار الإبداعية والتصميم والابتكار",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "73%"
+    });
+    composer.choiceInput("q25", {
+        question: "يسأل كثيرًا عن كيفية عمل الأشياء من حوله.",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "76%"
+    });
+    composer.choiceInput("q26", {
+        question: "يفضل الأنشطة التفاعلية أكثر من التعلم التقليدي",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "79%"
+    });
+    composer.choiceInput("q27", {
+        question: "يستمتع بالتجربة والاستكشاف أكثر من الحفظ والتلقين",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "82%"
+    });
+    composer.choiceInput("q28", {
+        question: "يحتاج إلى متابعة مستمرة للحفاظ على تركيزه",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "85%"
+    });
+    composer.choiceInput("q29", {
+        question: "يتعلم بشكل أفضل عند الحصول على اهتمام مباشر",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "88%"
+    });
+    composer.choiceInput("q30", {
+        question: "يتحفز أكثر عند التعلم مع مجموعة صغيرة",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "91%"
+    });
+    composer.choiceInput("q31", {
+        question: "يحتاج وقتًا إضافيًا لفهم التعليمات الجديدة",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "94%"
+    });
+    composer.choiceInput("q32", {
+        question: "يُظهر أداءً أفضل عندما يكون التعلم ممتعًا وغير تقليدي",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "97%"
+    });
+    composer.choiceInput("q33", {
+        question: "يتفاعل أكثر عندما يشعر بالحرية في التجربة والاستكشاف",
+        choices: ['نادرا - 1', '2', '3', '4', 'دائما - 5'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "98%"
+    });
+    composer.choiceInput("q34", {
+        question: "ما أكثر شيء يميز بطل رحلتنا؟",
+        choices: ['فضولي ويحب الاكتشاف', 'مبدع وصاحب أفكار جديدة', 'يحب الحركة والتفاعل', 'يحب التحديات والمنافسة', 'يحب العمل مع الآخرين', 'مستقل ويحب التعلم بطريقته', 'سريع التعلم عند التجربة العملية', 'يحب التكنولوجيا والأفكار الحديثة'],
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "99%"
+    });
+    composer.textInput("q35", {
+        question: "كيف تصفين بطل رحلتنا؟ شاركونا أكثر الصفات التي تميز شخصيته، وطريقته في التعلم أو التفاعل",
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "99%"
+    });
+    composer.textInput("q36", {
+        question: "رقم الهاتف الخاص بالتواصل",
+        // required: true,
+    });
+    composer.slide({
+        pageProgress: "100%"
+    });
+    composer.emailInput("q37", {
+        question: "الإيميل الخاص للتواصل",
+        // required: true,
+    });
+
+
+
+    const formsmd = new Formsmd(
+        composer.template,
+        document.getElementById("ask-form"),
+        {
+            postHeaders: {
+                Authorization: `Bearer hello-world`,
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            pageProgress: 'decorative',
+            saveState: true,
+            // themeLight: {
+            //     accent: "#353148",
+            //     accentForeground: "#e2d2b6",
+            //     backgroundColor: "#e2d2b6",
+            //     color: "#353148"
+            // }
+        }
+    );
+    formsmd.init();
+
+
 })(window, document, jQuery)
 
 

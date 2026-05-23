@@ -16,4 +16,6 @@
 <script src="{{ asset('assets/js/vendor/paralax-scroll.js') }}"></script>
 <script src="{{ asset('assets/js/vendor/jquery-ui.js') }}"></script>
 <script src="{{ asset('assets/js/vendor/tilt.jquery.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/formsmd/formsmd.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/formsmd/composer.bundle.min.js') }}"></script>
 <script src="{{ asset('assets/js/main.js') }}"></script>
