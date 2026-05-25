@@ -63,3 +63,6 @@ var(--fmd-check-focus-shadow);--fmd-check-mark-width:36px;--fmd-check-mark-heigh
 .fmd-form-field {display: flex;justify-content: center;align-items: center;flex-direction: column;}
 .fmd-form-question {text-align: center;}
 .form-image {height: 300px;margin: auto;}
+.fmd-scale-grid,.fmd-form-scale-text {width: 100%;}
+.fmd-root .fmd-form-scale-label {padding: 0 !important;}
+

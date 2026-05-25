@@ -794,271 +794,334 @@
     composer.slide({
         pageProgress: "9%"
     });
-    composer.choiceInput("q4", {
+    composer.opinionScale("q4", {
         question: "يشعر بطل رحلتنا بالملل سريعًا من الشرح التقليدي",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "12%"
     });
-    composer.choiceInput("q5", {
+    composer.opinionScale("q5", {
         question: "يفضل الحركة أو التفاعل أثناء التعلم",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "15%"
     });
-    composer.choiceInput("q6", {
+    composer.opinionScale("q6", {
         question: "يتحمس أكثر عندما يكون التعلم على شكل لعبة أو تحدي" ,
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "18%"
     });
-    composer.choiceInput("q7", {
+    composer.opinionScale("q7", {
         question: "ينتقل بسرعة من نشاط إلى آخر",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "21%"
     });
-    composer.choiceInput("q8", {
+    composer.opinionScale("q8", {
         question: "يتفاعل بشكل أفضل مع الأنشطة العملية والتجارب",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "24%"
     });
-    composer.choiceInput("q9", {
+    composer.opinionScale("q9", {
         question: "يحب المنافسة والتحديات السريعة",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "27%"
     });
-    composer.choiceInput("q10", {
+    composer.opinionScale("q10", {
         question: "يتعلم بشكل أسرع عند مشاهدة الصور أو الفيديوهات",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "30%"
     });
-    composer.choiceInput("q11", {
+    composer.opinionScale("q11", {
         question: "يفضل تجربة الأشياء بنفسه بدل الاستماع للشرح فقط",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "33%"
     });
-    composer.choiceInput("q12", {
+    composer.opinionScale("q12", {
         question: "يتذكر ما يراه أكثر مما يسمعه",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "36%"
     });
-    composer.choiceInput("q13", {
+    composer.opinionScale("q13", {
         question: "يحب بناء أو تركيب الأشياء",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "39%"
     });
-    composer.choiceInput("q14", {
+    composer.opinionScale("q14", {
         question: "يستمتع باكتشاف حلول جديدة للمشكلات",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "42%"
     });
-    composer.choiceInput("q15", {
+    composer.opinionScale("q15", {
         question: "يطرح الكثير من الأسئلة بدافع الفضول",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "45%"
     });
-    composer.choiceInput("q16", {
+    composer.opinionScale("q16", {
         question: "يستمتع بالتعلم أو العمل مع الآخرين",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "48%"
     });
-    composer.choiceInput("q17", {
+    composer.opinionScale("q17", {
         question: "يفضل أحيانًا العمل بمفرده",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "51%"
     });
-    composer.choiceInput("q18", {
+    composer.opinionScale("q18", {
         question: "يتحفز أكثر عند التشجيع والمدح",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "54%"
     });
-    composer.choiceInput("q19", {
+    composer.opinionScale("q19", {
         question: "يشعر بالحماس عند وجود تحديات أو منافسة",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "58%"
     });
-    composer.choiceInput("q20", {
+    composer.opinionScale("q20", {
         question: "يتردد أو يتوتر في المجموعات الكبيرة",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
+
     composer.slide({
         pageProgress: "61%"
     });
-    composer.choiceInput("q21", {
+    composer.opinionScale("q21", {
         question: "ُيظهر تفاعلًا أفضل عندما يشعر بالراحة والحرية",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
+
     composer.slide({
         pageProgress: "64%"
     });
-    composer.choiceInput("q22", {
+    composer.opinionScale("q22", {
         question: "ينجذب إلى الألعاب أو الأنشطة التي تحتوي على تحديات وحلول",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "67%"
     });
-    composer.choiceInput("q23", {
+    composer.opinionScale("q23", {
         question: "يهتم بالتكنولوجيا أو الأجهزة أو الروبوتات",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "70%"
     });
-    composer.choiceInput("q24", {
+    composer.opinionScale("q24", {
         question: "يستمتع بالأفكار الإبداعية والتصميم والابتكار",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "73%"
     });
-    composer.choiceInput("q25", {
+    composer.opinionScale("q25", {
         question: "يسأل كثيرًا عن كيفية عمل الأشياء من حوله.",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "76%"
     });
-    composer.choiceInput("q26", {
+    composer.opinionScale("q26", {
         question: "يفضل الأنشطة التفاعلية أكثر من التعلم التقليدي",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "79%"
     });
-    composer.choiceInput("q27", {
+    composer.opinionScale("q27", {
         question: "يستمتع بالتجربة والاستكشاف أكثر من الحفظ والتلقين",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "82%"
     });
-    composer.choiceInput("q28", {
+    composer.opinionScale("q28", {
         question: "يحتاج إلى متابعة مستمرة للحفاظ على تركيزه",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "85%"
     });
-    composer.choiceInput("q29", {
+    composer.opinionScale("q29", {
         question: "يتعلم بشكل أفضل عند الحصول على اهتمام مباشر",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "88%"
     });
-    composer.choiceInput("q30", {
+    composer.opinionScale("q30", {
         question: "يتحفز أكثر عند التعلم مع مجموعة صغيرة",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "91%"
     });
-    composer.choiceInput("q31", {
+    composer.opinionScale("q31", {
         question: "يحتاج وقتًا إضافيًا لفهم التعليمات الجديدة",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "94%"
     });
-    composer.choiceInput("q32", {
+    composer.opinionScale("q32", {
         question: "يُظهر أداءً أفضل عندما يكون التعلم ممتعًا وغير تقليدي",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "97%"
     });
-    composer.choiceInput("q33", {
+    composer.opinionScale("q33", {
         question: "يتفاعل أكثر عندما يشعر بالحرية في التجربة والاستكشاف",
-        choices: ['1 - نادرا', '2', '3', '4', '5 - دائما'],
-
-        required: true,
+        startAt: 1,
+        outOf: 5,
+        labelStart: "نادرا",
+        labelEnd: "دائما",
+        required: true
     });
     composer.slide({
         pageProgress: "98%"
