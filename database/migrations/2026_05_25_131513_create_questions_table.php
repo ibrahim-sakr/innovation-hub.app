@@ -11,9 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('questionnaire', function (Blueprint $table) {
+        Schema::create('questions', function (Blueprint $table) {
             $table->id();
-            $table->json('answers');
+            $table->string('slug')->unique();
+            $table->string('title');
+            $table->string('type')->default('text'); // choice, opinion, tel, email, text
+            $table->json('options')->nullable();
             $table->timestamps();
         });
     }
@@ -23,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('questionnaire');
+        Schema::dropIfExists('questions');
     }
 };

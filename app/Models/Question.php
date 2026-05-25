@@ -5,17 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Questionnaire extends Model
+class Question extends Model
 {
     use HasFactory;
 
-    protected $table = 'questionnaire';
-
-    protected $fillable = [
-        'answers',
-    ];
+    protected $table = 'questions';
+    protected $fillable = ['respondent_id', 'slug', 'title', 'description', 'type'];
 
     protected $casts = [
-        'answers' => 'json',
+        'options' => 'array',
     ];
 }

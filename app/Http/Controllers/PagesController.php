@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Activity;
+use App\Models\Answer;
 use App\Models\Category;
 use App\Models\Competition;
 use App\Models\Course;
+use App\Models\Question;
 use App\Models\Questionnaire;
+use App\Models\Respondent;
 use App\Models\Schedule;
 use App\Models\Testimonial;
 use Illuminate\Contracts\View\View;
@@ -101,7 +104,9 @@ class PagesController extends Controller
 
     public function ask(): View
     {
-        return view('pages.website.ask');
+        return view('pages.website.ask', [
+            'questions' => Question::all(['slug', 'title', 'options', 'type'])
+        ]);
     }
 
     public function askSubmit()
@@ -109,10 +114,23 @@ class PagesController extends Controller
         // remove unwanted fields
         $data = request()->except(['_end', '_rid', '_sheetName', '_submitted']);
 
-        // create new record with the rest of fields
-        $questionnaire = new Questionnaire;
-        $questionnaire->answers = $data;
-        $questionnaire->save();
+        // if user exist, get the ID
+        // if not create new Respondent and get ID
+        $respondent = Respondent::firstOrCreate([
+            'email' => $data['contact_email'],
+        ], [
+            'phone' => $data['contact_phone'],
+        ]);
+
+        foreach ($data as $key => $value) {
+            $answer = Answer::create([
+                'respondent_id' => $respondent->id,
+                'question_slug' => $key,
+                'answer' => $value,
+            ]);
+
+            $answer->save();
+        }
 
         return $data;
     }
