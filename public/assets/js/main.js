@@ -736,6 +736,33 @@
         dir: 'rtl',
     });
 
+    composer.startSlide({
+        buttonAlignment: "center",
+        buttonText: 'ابدأ الان',
+    });
+
+    composer.h1("Learning Journey Discovery", {
+        classNames: ["text-center"]
+    });
+
+    composer.p("كل طفل لديه طريقة مختلفة في التعلم في هذه الرحلة القصيرة سنساعدك على اكتشاف", {
+        classNames: ["text-center"]
+    });
+    composer.p("أسلوب التعلم الأنسب لطفلك", {
+        classNames: ["text-center"]
+    });
+    composer.p("البيئة التعليمية المناسبة له", {
+        classNames: ["text-center"]
+    });
+    composer.p("الطريقة التي يتفاعل بها بشكل أفضل", {
+        classNames: ["text-center"]
+    });
+    composer.p("لنساعده على الإستمتاع بالتعلم والتطور بطريقة تناسب شخصيته", {
+        classNames: ["text-center"]
+    });
+
+    composer.slide({});
+
     composer.textInput("q1", {
         question: "ما إسم بطل رحلتنا",
         placeholder: 'اكتب الاسم هنا ...',
@@ -1061,8 +1088,6 @@
         required: true,
     });
 
-
-
     const formsmd = new Formsmd(
         composer.template,
         document.getElementById("ask-form"),
@@ -1081,6 +1106,11 @@
             // }
         }
     );
+
+    // formsmd.onCompletion = function(json) {
+    //     console.log(json);
+    // }
+
     formsmd.init();
 
 
