@@ -741,6 +741,10 @@
         buttonText: 'ابدأ الان',
     });
 
+    composer.div(`<img class="form-image" src='/assets/images/form-start.jpeg'/>`, {
+        classNames: ["text-center"]
+    });
+
     composer.h1("Learning Journey Discovery", {
         classNames: ["text-center"]
     });

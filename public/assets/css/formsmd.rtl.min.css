@@ -62,3 +62,4 @@ var(--fmd-check-focus-shadow);--fmd-check-mark-width:36px;--fmd-check-mark-heigh
 .fmd-grid label::before, .fmd-grid label::after { content: none !important; }
 .fmd-form-field {display: flex;justify-content: center;align-items: center;flex-direction: column;}
 .fmd-form-question {text-align: center;}
+.form-image {height: 300px;margin: auto;}
