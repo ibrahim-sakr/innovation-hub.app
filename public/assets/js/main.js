@@ -768,6 +768,7 @@
         placeholder: 'اكتب الاسم هنا ...',
         required: true,
     });
+
     composer.slide({
         pageProgress: "3%"
     });
@@ -1086,6 +1087,23 @@
     composer.emailInput("q37", {
         question: "الإيميل الخاص للتواصل",
         required: true,
+    });
+
+    composer.endSlide({});
+    composer.h1("شكرًا لحرصكم على اكتشاف أفضل طريقة تعلم لبطل رحلتنا", {
+        classNames: ["text-center"]
+    });
+    composer.p("تم استلام رحلة الاكتشاف الخاصة ببطلنا بنجاح", {
+        classNames: ["text-center"]
+    });
+    composer.p("سيقوم فريق", {
+        classNames: ["text-center"]
+    });
+    composer.p("Innovation Hub", {
+        classNames: ["text-center"]
+    });
+    composer.p("بمراجعة الإجابات بعناية شديدة لأن كل بطل يستحق طريقة تعلم تناسبه", {
+        classNames: ["text-center"]
     });
 
     const formsmd = new Formsmd(
