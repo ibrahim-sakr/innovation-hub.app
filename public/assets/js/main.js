@@ -773,388 +773,388 @@
         required: true,
     });
 
-    composer.slide({
-        pageProgress: "3%"
-    });
-    composer.choiceInput("q2", {
-        question: "كم عمر بطل رحلتنا",
-        choices: ['7-9', '9-11', '11-15'],
-        required: true,
-    });
-    composer.slide({
-        pageProgress: "6%"
-    });
-    composer.choiceInput("q3", {
-        question: "ما أكثر شيء تتمنين تطويره لدى طفلك من خلال تعلم البرمجة",
-        choices: ['التركيز', 'التفكير والإبداع', 'المهارات الإجتماعية', 'حل المشكلات', 'حب التعلم', 'إستغلال الطاقة بشكل إيجابي', 'العمل الجماعي', 'الثقة بالنفس'],
-        multiple: true,
-        hideFormText: true,
-        required: true,
-    });
-    composer.slide({
-        pageProgress: "9%"
-    });
-    composer.opinionScale("q4", {
-        question: "يشعر بطل رحلتنا بالملل سريعًا من الشرح التقليدي",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "12%"
-    });
-    composer.opinionScale("q5", {
-        question: "يفضل الحركة أو التفاعل أثناء التعلم",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "15%"
-    });
-    composer.opinionScale("q6", {
-        question: "يتحمس أكثر عندما يكون التعلم على شكل لعبة أو تحدي" ,
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "18%"
-    });
-    composer.opinionScale("q7", {
-        question: "ينتقل بسرعة من نشاط إلى آخر",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "21%"
-    });
-    composer.opinionScale("q8", {
-        question: "يتفاعل بشكل أفضل مع الأنشطة العملية والتجارب",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "24%"
-    });
-    composer.opinionScale("q9", {
-        question: "يحب المنافسة والتحديات السريعة",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "27%"
-    });
-    composer.opinionScale("q10", {
-        question: "يتعلم بشكل أسرع عند مشاهدة الصور أو الفيديوهات",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "30%"
-    });
-    composer.opinionScale("q11", {
-        question: "يفضل تجربة الأشياء بنفسه بدل الاستماع للشرح فقط",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "33%"
-    });
-    composer.opinionScale("q12", {
-        question: "يتذكر ما يراه أكثر مما يسمعه",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "36%"
-    });
-    composer.opinionScale("q13", {
-        question: "يحب بناء أو تركيب الأشياء",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "39%"
-    });
-    composer.opinionScale("q14", {
-        question: "يستمتع باكتشاف حلول جديدة للمشكلات",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "42%"
-    });
-    composer.opinionScale("q15", {
-        question: "يطرح الكثير من الأسئلة بدافع الفضول",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "45%"
-    });
-    composer.opinionScale("q16", {
-        question: "يستمتع بالتعلم أو العمل مع الآخرين",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "48%"
-    });
-    composer.opinionScale("q17", {
-        question: "يفضل أحيانًا العمل بمفرده",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "51%"
-    });
-    composer.opinionScale("q18", {
-        question: "يتحفز أكثر عند التشجيع والمدح",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "54%"
-    });
-    composer.opinionScale("q19", {
-        question: "يشعر بالحماس عند وجود تحديات أو منافسة",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "58%"
-    });
-    composer.opinionScale("q20", {
-        question: "يتردد أو يتوتر في المجموعات الكبيرة",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-
-    composer.slide({
-        pageProgress: "61%"
-    });
-    composer.opinionScale("q21", {
-        question: "ُيظهر تفاعلًا أفضل عندما يشعر بالراحة والحرية",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-
-    composer.slide({
-        pageProgress: "64%"
-    });
-    composer.opinionScale("q22", {
-        question: "ينجذب إلى الألعاب أو الأنشطة التي تحتوي على تحديات وحلول",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "67%"
-    });
-    composer.opinionScale("q23", {
-        question: "يهتم بالتكنولوجيا أو الأجهزة أو الروبوتات",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "70%"
-    });
-    composer.opinionScale("q24", {
-        question: "يستمتع بالأفكار الإبداعية والتصميم والابتكار",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "73%"
-    });
-    composer.opinionScale("q25", {
-        question: "يسأل كثيرًا عن كيفية عمل الأشياء من حوله.",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "76%"
-    });
-    composer.opinionScale("q26", {
-        question: "يفضل الأنشطة التفاعلية أكثر من التعلم التقليدي",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "79%"
-    });
-    composer.opinionScale("q27", {
-        question: "يستمتع بالتجربة والاستكشاف أكثر من الحفظ والتلقين",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "82%"
-    });
-    composer.opinionScale("q28", {
-        question: "يحتاج إلى متابعة مستمرة للحفاظ على تركيزه",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "85%"
-    });
-    composer.opinionScale("q29", {
-        question: "يتعلم بشكل أفضل عند الحصول على اهتمام مباشر",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "88%"
-    });
-    composer.opinionScale("q30", {
-        question: "يتحفز أكثر عند التعلم مع مجموعة صغيرة",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "91%"
-    });
-    composer.opinionScale("q31", {
-        question: "يحتاج وقتًا إضافيًا لفهم التعليمات الجديدة",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "94%"
-    });
-    composer.opinionScale("q32", {
-        question: "يُظهر أداءً أفضل عندما يكون التعلم ممتعًا وغير تقليدي",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "97%"
-    });
-    composer.opinionScale("q33", {
-        question: "يتفاعل أكثر عندما يشعر بالحرية في التجربة والاستكشاف",
-        startAt: 1,
-        outOf: 5,
-        labelStart: "نادرا",
-        labelEnd: "دائما",
-        required: true
-    });
-    composer.slide({
-        pageProgress: "98%"
-    });
-    composer.choiceInput("q34", {
-        question: "ما أكثر شيء يميز بطل رحلتنا؟",
-        choices: ['فضولي ويحب الاكتشاف', 'مبدع وصاحب أفكار جديدة', 'يحب الحركة والتفاعل', 'يحب التحديات والمنافسة', 'يحب العمل مع الآخرين', 'مستقل ويحب التعلم بطريقته', 'سريع التعلم عند التجربة العملية', 'يحب التكنولوجيا والأفكار الحديثة'],
-        multiple: true,
-        hideFormText: true,
-        required: true,
-    });
-    composer.slide({
-        pageProgress: "99%"
-    });
-    composer.textInput("q35", {
-        question: "كيف تصفين بطل رحلتنا؟ شاركونا أكثر الصفات التي تميز شخصيته، وطريقته في التعلم أو التفاعل",
-        required: true,
-    });
-    composer.slide({
-        pageProgress: "99%"
-    });
-    composer.telInput("q36", {
-        question: "رقم الهاتف الخاص بالتواصل",
-        country: 'EG',
-        required: true,
-    });
-    composer.slide({
-        pageProgress: "100%"
-    });
-    composer.emailInput("q37", {
-        question: "الإيميل الخاص للتواصل",
-        required: true,
-    });
+    // composer.slide({
+    //     pageProgress: "3%"
+    // });
+    // composer.choiceInput("q2", {
+    //     question: "كم عمر بطل رحلتنا",
+    //     choices: ['7-9', '9-11', '11-15'],
+    //     required: true,
+    // });
+    // composer.slide({
+    //     pageProgress: "6%"
+    // });
+    // composer.choiceInput("q3", {
+    //     question: "ما أكثر شيء تتمنين تطويره لدى طفلك من خلال تعلم البرمجة",
+    //     choices: ['التركيز', 'التفكير والإبداع', 'المهارات الإجتماعية', 'حل المشكلات', 'حب التعلم', 'إستغلال الطاقة بشكل إيجابي', 'العمل الجماعي', 'الثقة بالنفس'],
+    //     multiple: true,
+    //     hideFormText: true,
+    //     required: true,
+    // });
+    // composer.slide({
+    //     pageProgress: "9%"
+    // });
+    // composer.opinionScale("q4", {
+    //     question: "يشعر بطل رحلتنا بالملل سريعًا من الشرح التقليدي",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "12%"
+    // });
+    // composer.opinionScale("q5", {
+    //     question: "يفضل الحركة أو التفاعل أثناء التعلم",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "15%"
+    // });
+    // composer.opinionScale("q6", {
+    //     question: "يتحمس أكثر عندما يكون التعلم على شكل لعبة أو تحدي" ,
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "18%"
+    // });
+    // composer.opinionScale("q7", {
+    //     question: "ينتقل بسرعة من نشاط إلى آخر",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "21%"
+    // });
+    // composer.opinionScale("q8", {
+    //     question: "يتفاعل بشكل أفضل مع الأنشطة العملية والتجارب",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "24%"
+    // });
+    // composer.opinionScale("q9", {
+    //     question: "يحب المنافسة والتحديات السريعة",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "27%"
+    // });
+    // composer.opinionScale("q10", {
+    //     question: "يتعلم بشكل أسرع عند مشاهدة الصور أو الفيديوهات",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "30%"
+    // });
+    // composer.opinionScale("q11", {
+    //     question: "يفضل تجربة الأشياء بنفسه بدل الاستماع للشرح فقط",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "33%"
+    // });
+    // composer.opinionScale("q12", {
+    //     question: "يتذكر ما يراه أكثر مما يسمعه",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "36%"
+    // });
+    // composer.opinionScale("q13", {
+    //     question: "يحب بناء أو تركيب الأشياء",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "39%"
+    // });
+    // composer.opinionScale("q14", {
+    //     question: "يستمتع باكتشاف حلول جديدة للمشكلات",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "42%"
+    // });
+    // composer.opinionScale("q15", {
+    //     question: "يطرح الكثير من الأسئلة بدافع الفضول",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "45%"
+    // });
+    // composer.opinionScale("q16", {
+    //     question: "يستمتع بالتعلم أو العمل مع الآخرين",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "48%"
+    // });
+    // composer.opinionScale("q17", {
+    //     question: "يفضل أحيانًا العمل بمفرده",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "51%"
+    // });
+    // composer.opinionScale("q18", {
+    //     question: "يتحفز أكثر عند التشجيع والمدح",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "54%"
+    // });
+    // composer.opinionScale("q19", {
+    //     question: "يشعر بالحماس عند وجود تحديات أو منافسة",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "58%"
+    // });
+    // composer.opinionScale("q20", {
+    //     question: "يتردد أو يتوتر في المجموعات الكبيرة",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    //
+    // composer.slide({
+    //     pageProgress: "61%"
+    // });
+    // composer.opinionScale("q21", {
+    //     question: "ُيظهر تفاعلًا أفضل عندما يشعر بالراحة والحرية",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    //
+    // composer.slide({
+    //     pageProgress: "64%"
+    // });
+    // composer.opinionScale("q22", {
+    //     question: "ينجذب إلى الألعاب أو الأنشطة التي تحتوي على تحديات وحلول",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "67%"
+    // });
+    // composer.opinionScale("q23", {
+    //     question: "يهتم بالتكنولوجيا أو الأجهزة أو الروبوتات",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "70%"
+    // });
+    // composer.opinionScale("q24", {
+    //     question: "يستمتع بالأفكار الإبداعية والتصميم والابتكار",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "73%"
+    // });
+    // composer.opinionScale("q25", {
+    //     question: "يسأل كثيرًا عن كيفية عمل الأشياء من حوله.",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "76%"
+    // });
+    // composer.opinionScale("q26", {
+    //     question: "يفضل الأنشطة التفاعلية أكثر من التعلم التقليدي",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "79%"
+    // });
+    // composer.opinionScale("q27", {
+    //     question: "يستمتع بالتجربة والاستكشاف أكثر من الحفظ والتلقين",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "82%"
+    // });
+    // composer.opinionScale("q28", {
+    //     question: "يحتاج إلى متابعة مستمرة للحفاظ على تركيزه",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "85%"
+    // });
+    // composer.opinionScale("q29", {
+    //     question: "يتعلم بشكل أفضل عند الحصول على اهتمام مباشر",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "88%"
+    // });
+    // composer.opinionScale("q30", {
+    //     question: "يتحفز أكثر عند التعلم مع مجموعة صغيرة",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "91%"
+    // });
+    // composer.opinionScale("q31", {
+    //     question: "يحتاج وقتًا إضافيًا لفهم التعليمات الجديدة",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "94%"
+    // });
+    // composer.opinionScale("q32", {
+    //     question: "يُظهر أداءً أفضل عندما يكون التعلم ممتعًا وغير تقليدي",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "97%"
+    // });
+    // composer.opinionScale("q33", {
+    //     question: "يتفاعل أكثر عندما يشعر بالحرية في التجربة والاستكشاف",
+    //     startAt: 1,
+    //     outOf: 5,
+    //     labelStart: "نادرا",
+    //     labelEnd: "دائما",
+    //     required: true
+    // });
+    // composer.slide({
+    //     pageProgress: "98%"
+    // });
+    // composer.choiceInput("q34", {
+    //     question: "ما أكثر شيء يميز بطل رحلتنا؟",
+    //     choices: ['فضولي ويحب الاكتشاف', 'مبدع وصاحب أفكار جديدة', 'يحب الحركة والتفاعل', 'يحب التحديات والمنافسة', 'يحب العمل مع الآخرين', 'مستقل ويحب التعلم بطريقته', 'سريع التعلم عند التجربة العملية', 'يحب التكنولوجيا والأفكار الحديثة'],
+    //     multiple: true,
+    //     hideFormText: true,
+    //     required: true,
+    // });
+    // composer.slide({
+    //     pageProgress: "99%"
+    // });
+    // composer.textInput("q35", {
+    //     question: "كيف تصفين بطل رحلتنا؟ شاركونا أكثر الصفات التي تميز شخصيته، وطريقته في التعلم أو التفاعل",
+    //     required: true,
+    // });
+    // composer.slide({
+    //     pageProgress: "99%"
+    // });
+    // composer.telInput("q36", {
+    //     question: "رقم الهاتف الخاص بالتواصل",
+    //     country: 'EG',
+    //     required: true,
+    // });
+    // composer.slide({
+    //     pageProgress: "100%"
+    // });
+    // composer.emailInput("q37", {
+    //     question: "الإيميل الخاص للتواصل",
+    //     required: true,
+    // });
 
     composer.endSlide({});
     composer.h1("شكرًا لحرصكم على اكتشاف أفضل طريقة تعلم لبطل رحلتنا", {
@@ -1163,15 +1163,13 @@
     composer.p("تم استلام رحلة الاكتشاف الخاصة ببطلنا بنجاح", {
         classNames: ["text-center"]
     });
-    composer.p("سيقوم فريق", {
-        classNames: ["text-center"]
-    });
-    composer.p("Innovation Hub", {
+    composer.p("سيقوم فريق Innovation Hub", {
         classNames: ["text-center"]
     });
     composer.p("بمراجعة الإجابات بعناية شديدة لأن كل بطل يستحق طريقة تعلم تناسبه", {
         classNames: ["text-center"]
     });
+    composer.div(`<a class="fmd-btn fmd-btn-accent form-redirect" href="https://calendly.com/eng-hader2012/30min">Book A Discovery Session</a>`);
 
     const formsmd = new Formsmd(
         composer.template,
