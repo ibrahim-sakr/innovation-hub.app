@@ -19,14 +19,14 @@ class ActivityController extends Controller
 {
     public function index(): Factory|View|Application
     {
-        return view('activities.home');
-//        return redirect()->route('activities', ['name' => 'binary-code']);
+        return view('activities-old.home');
+//        return redirect()->route('activities-old', ['name' => 'binary-code']);
     }
 
     public function activity(string $name): Factory|View|Application
     {
         // binary-code, multiplication-table, sequencing-and-debugging
-        $viewName = 'activities.' . $name;
+        $viewName = 'activities-old.' . $name;
         if (view()->exists($viewName)) {
 
             return view($viewName, [

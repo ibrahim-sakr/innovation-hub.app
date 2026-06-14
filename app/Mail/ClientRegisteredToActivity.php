@@ -50,7 +50,7 @@ class ClientRegisteredToActivity extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.registered-to-' . $this->activityName
+            view: 'emails-old.registered-to-' . $this->activityName
         );
     }
 
@@ -64,7 +64,7 @@ class ClientRegisteredToActivity extends Mailable
         $fileName = $this->activityName . '.pdf';
 
         return [
-            Attachment::fromPath(storage_path('activities/' . $fileName))
+            Attachment::fromPath(storage_path('activities-old/' . $fileName))
                 ->as($fileName)
                 ->withMime('application/pdf'),
         ];

@@ -1,0 +1,137 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Activity;
+use App\Models\Answer;
+use App\Models\Category;
+use App\Models\Competition;
+use App\Models\Course;
+use App\Models\Question;
+use App\Models\Questionnaire;
+use App\Models\Respondent;
+use App\Models\Schedule;
+use App\Models\Testimonial;
+use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Session;
+
+//use Illuminate\Http\Request;
+
+class PagesController extends Controller
+{
+    public function home(): View
+    {
+
+        return view('pages.website.home', [
+            'courses' => Course::where('feature', 1)->get(),
+            'competitions' => Competition::all(),
+            'activities' => Activity::all(),
+            'schedules' => Schedule::all(),
+            'testimonials' => Testimonial::all()
+        ]);
+    }
+
+    public function activities(): View
+    {
+        return view('pages.website.activities');
+    }
+
+    public function activity(int $activity): View
+    {
+        return view('pages.website.activity', [
+            'activity' => Activity::find($activity)
+        ]);
+    }
+
+    public function competitions(): View
+    {
+        return view('pages.website.competitions');
+    }
+
+    public function competition(int $competition): View
+    {
+
+        return view('pages.website.competition', [
+            'competition' => Competition::with('categories')->find($competition)
+        ]);
+    }
+
+    public function category(int $category): View
+    {
+
+        return view('pages.website.category', [
+            'category' => Category::find($category)
+        ]);
+    }
+
+    public function courses(): View
+    {
+        $courses = Course::all();
+
+        return view('pages.website.courses', [
+            'courses' => $courses
+        ]);
+    }
+
+    public function course(int $course): View
+    {
+        $course = Course::findOrFail($course);
+
+        return view('pages.website.course', [
+            'course' => $course
+        ]);
+    }
+
+    public function feedback(): View
+    {
+        return view('pages.website.feedback');
+    }
+
+    public function hiring(): View
+    {
+        return view('pages.website.hiring');
+    }
+
+    public function join(): View
+    {
+        return view('pages.website.join-us');
+    }
+
+    public function mentalMath(): View
+    {
+        return view('pages.website.mental-math');
+    }
+
+    public function ask(): View
+    {
+        return view('pages.website.ask', [
+            'questions' => Question::all(['slug', 'title', 'options', 'type'])
+        ]);
+    }
+
+    public function askSubmit()
+    {
+        // remove unwanted fields
+        $data = request()->except(['_end', '_rid', '_sheetName', '_submitted']);
+
+        // if user exist, get the ID
+        // if not create new Respondent and get ID
+        $respondent = Respondent::firstOrCreate([
+            'email' => $data['contact_email'],
+        ], [
+            'phone' => $data['contact_phone'],
+        ]);
+
+        foreach ($data as $key => $value) {
+            $answer = Answer::create([
+                'respondent_id' => $respondent->id,
+                'question_slug' => $key,
+                'answer' => $value,
+            ]);
+
+            $answer->save();
+        }
+
+        return $data;
+    }
+}

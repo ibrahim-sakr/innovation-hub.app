@@ -16,4 +16,14 @@ class Client extends Model
         'email',
         'phone'
     ];
+
+    public function xxx()
+    {
+        return $this->belongsToMany(
+            PaymentProvider::class,
+            'users_payments_providers',
+            'user_id',
+            'payment_id'
+        );
+    }
 }

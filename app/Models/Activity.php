@@ -12,6 +12,8 @@ class Activity extends Model
     protected $table = 'activities';
 
     protected $fillable = [
-        'name'
+        'name',
+        'icon',
+        'description'
     ];
 }
